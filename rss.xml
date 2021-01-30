@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Woo, Jeongmin]]></title><description><![CDATA[안동에 살면서 웹 개발, 미디어 아트를 하고 있는 우정민입니다.]]></description><link>https://greenblues.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 30 Jan 2021 06:43:30 GMT</lastBuildDate><item><title><![CDATA[Gatsby 블로그 개발 일지 - 1. Github Pages 배포하기]]></title><description><![CDATA[그동안 티스토리를 블로그로 써오다가 웹 개발 공부 겸 본인 사이트를 만들어 보는 것이 많은 도움이 된다는 조언을 듣고 직접 블로그를 만들게 되었습니다. Gatsby로 블로그를 제작하며 느꼈던 점들과 사용한 방법들에 관해 기술합니다. 목차 Github…]]></description><link>https://greenblues.github.io/gatsby-블로그-제작-일지/1/</link><guid isPermaLink="false">https://greenblues.github.io/gatsby-블로그-제작-일지/1/</guid><pubDate>Sat, 30 Jan 2021 04:22:01 GMT</pubDate><content:encoded>&lt;p&gt;그동안 티스토리를 블로그로 써오다가 웹 개발 공부 겸 본인 사이트를 만들어 보는 것이 많은 도움이 된다는 조언을 듣고 직접 블로그를 만들게 되었습니다. Gatsby로 블로그를 제작하며 느꼈던 점들과 사용한 방법들에 관해 기술합니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;목차&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Github 저장소 생성, 푸시&lt;/li&gt;
+&lt;li&gt;블로그 빌드, 배포&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;Github 저장소 생성&lt;/h3&gt;
+&lt;p&gt;Github Pages를 만들기 위해 먼저 Github 저장소를 생성합니다. 저장소의 이름을 아무렇게 하면 url이 &lt;code class=&quot;language-text&quot;&gt;[사용자이름].github.io/[프로젝트이름]&lt;/code&gt;가 되기 때문에 프로젝트 이름이 붙지 않는 url을 사용하고 싶으면 저장소 이름을 &lt;code class=&quot;language-text&quot;&gt;[사용자이름].github.io&lt;/code&gt;로 해주세요.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/badca8f874ea4cd89dba336ec44a3d66/daed9/1_github_repo.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 94.30379746835443%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAACR0lEQVQ4y41U227UQAzNx/KGhMQ7L0hIfBQPFT9Bi2jL3nK/3yaZZCYH20l2aemGHenIk2Ri+9jH4/x6fML9w0+cTi4en54FP+4fsNvtwcvaCdN0Oxw7WQzDINCaoTGOo3xcl6W9vdVhmmYww4i/V9f3iOMEWZ6jLIrzewkyYdthVsQIoxBBGBMitKpD3TTYH044uZ4gIudt28FYC200tpZTlDn8IITr+fD8gJyGSNKUglAAes/v+Bvv4yShbwmKvEBaZQiqCEmTIiaEVYzRjHA8OuzTTwlRL8sKxphzTee66rPtqRSr7XSPVit0QwdF4L0lBg7TOS60XC+QzJpWEb2JIhqCfRNGMC123vN5p6eGKKXISSvRu65funwp/usO8/PF0QWSoZc00gyuU99raoqiAESBsmyaViw/c8AVfGbt+j9d7lWBPIuEbkuHuT4z9AvLdRxHI9lzna86NLpAr0hvVQPVdSJutpwZZ8JgGQ3jS61e1aEfxNIIlgRbPwjEAc8J684ukNrdMIYO6+xIc3w4ulJHnpCcpoPrV1Y1irKU/evscM1hTiJlh7/pMtjtD6jrRmhW5Gzd102Nqu2RtYZ0Z7cp849hFAnWi4HtfFEQWNQkrW4gwY8zbWxRLokS0/aodmVViQ65IXxBqGWum86gUJOIfSu7OUMaN8+lCQkiRHRByGjJeC2y0Rfb9vb/lEtVI8ip00WCqEylZpwlS4ftDJpXsjVlqrTdzvDD3Re8v/uMj9+/4t23T3jInucMMF29orYc/gHB2MMWcYjBAgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;깃허브 저장소 생성&quot;
+        title=&quot;깃허브 저장소 생성&quot;
+        src=&quot;/static/badca8f874ea4cd89dba336ec44a3d66/f058b/1_github_repo.png&quot;
+        srcset=&quot;/static/badca8f874ea4cd89dba336ec44a3d66/c26ae/1_github_repo.png 158w,
+/static/badca8f874ea4cd89dba336ec44a3d66/6bdcf/1_github_repo.png 315w,
+/static/badca8f874ea4cd89dba336ec44a3d66/f058b/1_github_repo.png 630w,
+/static/badca8f874ea4cd89dba336ec44a3d66/40601/1_github_repo.png 945w,
+/static/badca8f874ea4cd89dba336ec44a3d66/78612/1_github_repo.png 1260w,
+/static/badca8f874ea4cd89dba336ec44a3d66/daed9/1_github_repo.png 1426w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;저장소를 생성했으면 블로그 폴더를 원하는 branch에 push합니다. Gatsby를 빌드하면 파일이 어지러워지기 때문에 저같이 main branch가 깔끔하길 원하시다면 소스코드를 main로, 빌드된 파일을 deploy라는 branch로 관리하겠습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git init
+git add .
+git commit -m &amp;quot;first commit&amp;quot;
+git branch -M main
+git remote add origin [깃_주소]
+git push -u origin main&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;블로그 빌드, 배포&lt;/h3&gt;
+&lt;p&gt;gh-pages를 설치합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm install gh-pages --save-dev
+
+&amp;quot;deploy&amp;quot;: &amp;quot;gatsby build &amp;amp;&amp;amp; gh-pages -d public -b deploy&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Gatsby 블로그 개발 일지 - 0. Gatsby 시작하기]]></title><description><![CDATA[그동안 티스토리를 블로그로 써오다가 웹 개발 공부 겸 본인 사이트를 만들어 보는 것이 많은 도움이 된다는 조언을 듣고 직접 블로그를 만들게 되었습니다. Gatsby…]]></description><link>https://greenblues.github.io/gatsby-블로그-제작-일지/0/</link><guid isPermaLink="false">https://greenblues.github.io/gatsby-블로그-제작-일지/0/</guid><pubDate>Sat, 30 Jan 2021 04:22:00 GMT</pubDate><content:encoded>&lt;p&gt;그동안 티스토리를 블로그로 써오다가 웹 개발 공부 겸 본인 사이트를 만들어 보는 것이 많은 도움이 된다는 조언을 듣고 직접 블로그를 만들게 되었습니다. Gatsby로 블로그를 제작하며 느꼈던 점들과 사용한 방법들에 관해 기술합니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;목차&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;개발 목표&lt;/li&gt;
+&lt;li&gt;Gatsby Cli 설치&lt;/li&gt;
+&lt;li&gt;Gatsby 스타터 선택&lt;/li&gt;
+&lt;li&gt;Gatsby Configuration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;개발 목표&lt;/h3&gt;
+&lt;p&gt;블로그를 만들기 전 잡은 대략적인 방향들입니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;정적사이트 생성기 사용&lt;/li&gt;
+&lt;li&gt;Github Pages 배포&lt;/li&gt;
+&lt;li&gt;SEO 설정&lt;/li&gt;
+&lt;li&gt;댓글 기능 추가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Static Site Generator에 대해 검색해보니 Jekyll, Gatsby, Hugo 등 많은 선택지가 있었습니다. 그 중 한글 문서가 많고 리액트를 사용하는 Gatsby를 선택했습니다. 댓글 기능으로는 개인적으로 깃허브 UI가 마음에 들어 utterances를 선택했습니다.&lt;/p&gt;
+&lt;h3&gt;Gatsby Cli 설치&lt;/h3&gt;
+&lt;p&gt;Gatsby를 시작하기 위해 &lt;code class=&quot;language-text&quot;&gt;npm install -g gatsby-cli&lt;/code&gt;로 Gatsby Cli를 전역으로 설치합니다. Gatsby Cli는 Gatsby 어플리케이션을 실행하고 배포를 위한 빌드 기능 등을 사용하기 위한 프로그램입니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;M1 맥을 사용하는 분들은 gatsby-cli를 설치하기 위한 npm upstream이 Node.js 버전 15.3.0 밑에서는 arm64와 호환이 되지 않습니다. 만약 애플 실리콘 네이티브로 개발을 하고 싶다면 꼭 Node.js 버전을 15.3.0 이상으로 업데이트해주세요!&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Gatsby 스타터 선택&lt;/h3&gt;
+&lt;p&gt;Gatsby에는 다른 사용자들이 미리 만들어둔 다양한 &lt;a href=&quot;https://www.gatsbyjs.com/starters/?&quot;&gt;스타터&lt;/a&gt;들이 존재합니다. 저는 &lt;a href=&quot;https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/&quot;&gt;gatsby-starter-blog&lt;/a&gt;라는 미니멀한 스타터를 선택했습니다. 만들고 싶은 사이트의 목적에 따라 적합한 스타터를 골라 터미널에 &lt;code class=&quot;language-text&quot;&gt;gatsby new [폴더] [스타터-깃허브-주소]&lt;/code&gt;를 입력하면 지정한 폴더에 해당 스타터를 설치합니다.&lt;/p&gt;
+&lt;h3&gt;Gatsby Configuration&lt;/h3&gt;
+&lt;p&gt;스타터를 설치한 폴더에서 &lt;code class=&quot;language-text&quot;&gt;gatsby develop&lt;/code&gt;을 입력하면 로컬 development server를 시작합니다. 브라우저 주소창에 &lt;code class=&quot;language-text&quot;&gt;localhost:8000&lt;/code&gt;을 입력하니 스타터의 기본 설정된 사이트가 보이네요. 이제부터 바꿔보도록 합시다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;/gatsby-config.js&lt;/code&gt;에서 사이트 메타데이터와 gatsby 플러그인 설정을 수정할 수 있습니다. 먼저 사이트 메타데이터를 수정합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;module.exports = {
+    siteMetadata: {
+        title: `Woo, Jeongmin`,
+        author: {
+        name: `우정민`,
+        summary: `안동에 살면서 웹 개발, 미디어 아트를 하고 있는`,
+
+        description: `안동에 살면서 웹 개발, 미디어 아트를 하고 있는 우정민입니다.`,
+            siteUrl: `https://greenblues1190.github.io/`,
+            social: {
+            github: `greenblues1190`,
+            instagram: `srrlmnth`,
+            soundcloud: `srrlmnth`,
+            twitter: `greenblues1190`,
+        },
+    },
+    ...
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;bio 정보를 &lt;code class=&quot;language-text&quot;&gt;src/components/bio.js&lt;/code&gt; 컴포넌트에서 관리하는군요. 소셜 정보와 프로필 양식을 수정합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;...
+site {
+    siteMetadata {
+    author {
+        name
+        summary
+    }
+    social {
+        github
+        instagram
+        soundcloud
+        twitter
+    }
+    }
+}
+...
+{author?.name &amp;amp;&amp;amp; (
+    &amp;lt;p&amp;gt;
+    {author?.summary || null}  &amp;lt;strong&amp;gt;{author.name}&amp;lt;/strong&amp;gt;입니다.
+    {` `}
+    &amp;lt;a href={`https://github.com/${social?.github || ``}`}&amp;gt;
+        Github
+    &amp;lt;/a&amp;gt;
+    {` `}
+    &amp;lt;a href={`https://github.com/${social?.github || ``}`}&amp;gt;
+        Instagram
+    &amp;lt;/a&amp;gt;
+    {` `}
+    &amp;lt;a href={`https://github.com/${social?.github || ``}`}&amp;gt;
+        Soundcloud
+    &amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그리고 &lt;code class=&quot;language-text&quot;&gt;/content/assets/profile-pic.jpg&lt;/code&gt;를 바꾸면…&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4f3f898db9fb343d6a62bdd9d8ebae1f/35252/0_bio.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 25.949367088607595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA70lEQVQY062QvU6EQBSFeUQtfSWMFpZuB08ACInhJ9R0Ejp3WbFYZhhARWZ3+D07O4WxsPQmX+459ybnJldzXRe6rsNxHGy3W+R5DtM0EYYhfN+H53mwbRuGYaj9pZZlwbquf6JlWabCgiBAkiRI0xSXI3EcI4oiPG42SluWhaIoVOA8zz8Byy9UIP65tGfvCQ93t+g5ByUEdc1AKcWhJGB1g7ppURKqaKQmtMJu/wbGGKqPb+xoh3fW4bX8xKHtod3L/91cX6H64njZU6QS0naYxhHDMEhGCNUlciaEAOdH5cU4gYsJx2FCfxpxkv4MLB1vbjh/gFUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;수정된 bio의 모습&quot;
+        title=&quot;수정된 bio의 모습&quot;
+        src=&quot;/static/4f3f898db9fb343d6a62bdd9d8ebae1f/f058b/0_bio.png&quot;
+        srcset=&quot;/static/4f3f898db9fb343d6a62bdd9d8ebae1f/c26ae/0_bio.png 158w,
+/static/4f3f898db9fb343d6a62bdd9d8ebae1f/6bdcf/0_bio.png 315w,
+/static/4f3f898db9fb343d6a62bdd9d8ebae1f/f058b/0_bio.png 630w,
+/static/4f3f898db9fb343d6a62bdd9d8ebae1f/40601/0_bio.png 945w,
+/static/4f3f898db9fb343d6a62bdd9d8ebae1f/35252/0_bio.png 1204w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이와 같이 스타터를 조금씩 수정하는 것만으로 편하게 사이트를 제작할 수 있습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://greenblues.github.io/hello-world/</link><guid isPermaLink="false">https://greenblues.github.io/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
+&lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
+&lt;p&gt;Oh, and here’s a great quote from this Wikipedia on
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A salted duck egg is a Chinese preserved food product made by soaking duck
+eggs in brine, or packing each egg in damp, salted charcoal. In Asian
+supermarkets, these eggs are sometimes sold covered in a thick layer of salted
+charcoal paste. The eggs may also be sold with the salted paste removed,
+wrapped in plastic, and vacuum packed. From the salt curing process, the
+salted duck eggs have a briny aroma, a gelatin-like egg white and a
+firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.31645569620254%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEEBf/aAAwDAQACEAMQAAABgik0dWC//8QAGRABAAMBAQAAAAAAAAAAAAAAAQACERJC/9oACAEBAAEFAkqW7B5Zovtvk//EABcRAQADAAAAAAAAAAAAAAAAAAAREkH/2gAIAQMBAT8B1WX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAESL/2gAIAQIBAT8BjT//xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRISIxMv/aAAgBAQAGPwK9GNocyS8hCj//xAAaEAADAQEBAQAAAAAAAAAAAAAAAREhQYGx/9oACAEBAAE/IXOrA43oOyg9wgU86OZMfwZKypT/2gAMAwEAAgADAAAAEMj/AP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAIAQMBAT8QEcMrrL//xAAXEQEBAQEAAAAAAAAAAAAAAAABACFR/9oACAECAQE/EDqFaX//xAAeEAEAAgIBBQAAAAAAAAAAAAABABExYYEhQVHR4f/aAAgBAQABPxBKrg2GDiClXbHqF7iR1GlVWpSDwtYblyIMVw9TMCCKvPyp/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Chinese Salty Egg&quot;
+        title=&quot;Chinese Salty Egg&quot;
+        src=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg&quot;
+        srcset=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/ff44c/salty_egg.jpg 158w,
+/static/8058f3f26913fea3b6a89a73344fe94a/a6688/salty_egg.jpg 315w,
+/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg 630w,
+/static/8058f3f26913fea3b6a89a73344fe94a/0ede0/salty_egg.jpg 945w,
+/static/8058f3f26913fea3b6a89a73344fe94a/3ac88/salty_egg.jpg 1260w,
+/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg 2048w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;You can also write code blocks here!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; saltyDuckEgg &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;chinese preserved food product&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;Number&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Title&lt;/th&gt;
+&lt;th align=&quot;right&quot;&gt;Year&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Harry Potter and the Philosopher’s Stone&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;2001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;2&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Harry Potter and the Chamber of Secrets&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;2002&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;3&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;Harry Potter and the Prisoner of Azkaban&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;2004&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href=&quot;https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md&quot;&gt;View raw (TEST.md)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;This is a paragraph.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Header 1
+========
+
+Header 2
+--------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h3&gt;Header 3&lt;/h3&gt;
+&lt;h4&gt;Header 4&lt;/h4&gt;
+&lt;h5&gt;Header 5&lt;/h5&gt;
+&lt;h6&gt;Header 6&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h3&gt;Header 3&lt;/h3&gt;
+&lt;h4&gt;Header 4&lt;/h4&gt;
+&lt;h5&gt;Header 5&lt;/h5&gt;
+&lt;h6&gt;Header 6&lt;/h6&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Header 1 #
+## Header 2 ##
+### Header 3 ###
+#### Header 4 ####
+##### Header 5 #####
+###### Header 6 ######&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;h2&gt;This is a header.&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;This is the first list item.&lt;/li&gt;
+&lt;li&gt;This is the second list item.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here’s some example code:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Markdown.generate();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; ## This is a header.
+&amp;gt; 1. This is the first list item.
+&amp;gt; 2. This is the second list item.
+&amp;gt;
+&amp;gt; Here&amp;#39;s some example code:
+&amp;gt;
+&amp;gt;     Markdown.generate();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Red
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Green
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Blue
+
+&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Red
+&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Green
+&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Blue
+
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Red
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Green
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Blue&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;code goes&lt;/code&gt; here in this line&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;bold&lt;/strong&gt; goes here&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;- &lt;span class=&quot;token code keyword&quot;&gt;`code goes`&lt;/span&gt; here in this line
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token bold&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;/span&gt; goes here&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;Buy flour and salt&lt;/li&gt;
+&lt;li&gt;Mix together with water&lt;/li&gt;
+&lt;li&gt;Bake&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; Buy flour and salt
+&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; Mix together with water
+&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; Bake&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;code goes&lt;/code&gt; here in this line&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;bold&lt;/strong&gt; goes here&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;1. &lt;span class=&quot;token code keyword&quot;&gt;`code goes`&lt;/span&gt; here in this line
+&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; &lt;span class=&quot;token bold&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;/span&gt; goes here&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Paragraph:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Code&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;!-- --&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Paragraph:
+
+    Code&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is &lt;a href=&quot;http://example.com&quot; title=&quot;Example&quot;&gt;an example&lt;/a&gt; link.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://example.com&quot;&gt;This link&lt;/a&gt; has no title attr.&lt;/p&gt;
+&lt;p&gt;This is &lt;a href=&quot;http://example.com&quot; title=&quot;Optional Title&quot;&gt;an example&lt;/a&gt; reference-style link.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;This is [an example](http://example.com &amp;quot;Example&amp;quot;) link.
+
+[This link](http://example.com) has no title attr.
+
+This is [an example] [id] reference-style link.
+
+[id]: http://example.com &amp;quot;Optional Title&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This paragraph has some &lt;code class=&quot;language-text&quot;&gt;code&lt;/code&gt; in it.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;This paragraph has some `code` in it.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://placehold.it/200x50&quot; alt=&quot;Alt Text&quot; title=&quot;Image Title&quot;&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;![Alt Text](https://placehold.it/200x50 &amp;quot;Image Title&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
