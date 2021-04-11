@@ -1,4 +1,176 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Woo, Jeongmin]]></title><description><![CDATA[안동에 살면서 웹 개발, 미디어 아트를 하고 있는 우정민입니다.]]></description><link>https://greenblues.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 30 Jan 2021 18:18:46 GMT</lastBuildDate><item><title><![CDATA[Gatsby 블로그 개발 일지 - 2. 태그 추가하기]]></title><description><![CDATA[같은 주제에 대한 글을 모아 볼 수 있도록 태그를 추가해봅시다. 목차 포스트에 태그 추가하기 태그 별 포스트 페이지 /tags 페이지 포스트에 태그 추가하기 마크다운 문서에서는 메타데이터를 YAML 헤더에 작성할 수 있습니다. title과 date…]]></description><link>https://greenblues.github.io/2021/gatsby-blog/2/</link><guid isPermaLink="false">https://greenblues.github.io/2021/gatsby-blog/2/</guid><pubDate>Sat, 30 Jan 2021 18:16:00 GMT</pubDate><content:encoded>&lt;p&gt;같은 주제에 대한 글을 모아 볼 수 있도록 태그를 추가해봅시다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Woo, Jeongmin]]></title><description><![CDATA[안동에 살면서 웹 개발, 미디어 아트를 하고 있는 우정민입니다.]]></description><link>https://greenblues.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Apr 2021 05:27:28 GMT</lastBuildDate><item><title><![CDATA[504 Gateway Timeout]]></title><description><![CDATA[서버로부터 오랜시간 동안 응답을 받지 못해 발생하는 에러.
+즉 서버에 문제가 있을 가능성이 크다. 서버 측 코드의 변수명에 오타의 있어 수정하니 해결.]]></description><link>https://greenblues.github.io/2021/error-log/20210408/</link><guid isPermaLink="false">https://greenblues.github.io/2021/error-log/20210408/</guid><pubDate>Thu, 08 Apr 2021 11:27:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell line-numbers&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;command-line-prompt&quot;&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;HPM&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; Error occurred &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; trying to proxy request /api/users/auth from localhost:3000 to http://localhost:5000 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ECONNREFUSED&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;https://nodejs.org/api/errors.html&lt;span class=&quot;token comment&quot;&gt;#errors_common_system_errors)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell line-numbers&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;command-line-prompt&quot;&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;/span&gt;http://localhost:3000/api/users/login &lt;span class=&quot;token number&quot;&gt;504&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Gateway Timeout&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;서버로부터 오랜시간 동안 응답을 받지 못해 발생하는 에러.
+즉 서버에 문제가 있을 가능성이 크다.&lt;/p&gt;
+&lt;p&gt;서버 측 코드의 변수명에 오타의 있어 수정하니 해결. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[유의적 버전 (Semantic Versioning)]]></title><description><![CDATA[유의적 버전 2.0.0 정리. (semver.org/lang/ko/) 목차 유의적 버전이란 버전 관리 형식 pre-release 식별자 빌드 메타데이터 식별자 유의적 버전이란 버전 번호를 어떻게 정하고 올려야 하는지를 명시하는 규칙과 요구사항. API…]]></description><link>https://greenblues.github.io/2021/semantic-versioning/</link><guid isPermaLink="false">https://greenblues.github.io/2021/semantic-versioning/</guid><pubDate>Tue, 02 Mar 2021 04:32:00 GMT</pubDate><content:encoded>&lt;p&gt;유의적 버전 2.0.0 정리. (&lt;a href=&quot;https://semver.org/lang/ko/&quot;&gt;semver.org/lang/ko/&lt;/a&gt;)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;목차&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;유의적 버전이란&lt;/li&gt;
+&lt;li&gt;버전 관리 형식&lt;/li&gt;
+&lt;li&gt;pre-release 식별자&lt;/li&gt;
+&lt;li&gt;빌드 메타데이터 식별자&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;유의적 버전이란&lt;/h3&gt;
+&lt;p&gt;버전 번호를 어떻게 정하고 올려야 하는지를 명시하는 규칙과 요구사항.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;API에 영향이 없는 버그 수정은 수(修)버전을 올리고, API가 호환되면서 바꾸거나 추가하는 경우에는 부(部)버전을 올리고, API가 호환되지 않는 변경이라면 주(主)버전을 올린다.&lt;/li&gt;
+&lt;li&gt;유의적 버전을 쓰는 소프트웨어는 반드시 공개 API를 선언한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;버전 관리 형식&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;X.Y.Z의 형태로 하고, X, Y, Z는 각각 자연수(음이 아닌 정수)이고, 절대로 0이 앞에 붙어서는 안 된다. X, Y, Z는 각각 주(主), 부(部), 수(修)버전 번호이다. 각각은 반드시 증가하는 수여야 한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;예: 1.9.0 → 1.10.0 → 1.11.0&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;기존 버전과 호환되지 않게 API가 바뀌면 “주버전 X”를 올리고, 주버전 번호를 올릴 때는 반드시 부버전과 수버전을 0으로 초기화 한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;예: 1.8.15 → 2.0.0&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;기존 버전과 호환되면서 새로운 기능을 추가할 때는 “부버전 Y”를 올리고, 공개 API의 일부를 앞으로 제거할 것(deprecate)으로 표시한 경우에도 반드시 올리도록 한다. 부버전이 올라가면 반드시 수버전을 0으로 초기화 한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;예: 1.9.10 → 1.10.0&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;기존 버전과 호환되면서 버그를 수정한 것이라면 “수버전 Z”를 올린다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;예: 1.8.9 → 1.9.0&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;주버전 0(0.y.z)은 초기 개발을 위해서 쓴다. 1.0.0 버전은 공개 API를 정의한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;pre-release 식별자&lt;/h3&gt;
+&lt;p&gt;수버전 바로 뒤에 붙임표(-)를 붙이고 마침표(.)로 구분된 식별자를 더해서 정식 배포를 앞둔 (pre-release) 버전을 표기할 수 있다. 식별자는 반드시 아스키(ASCII) 문자, 숫자, 붙임표로만 구성한다[0-9A-Za-z-]. 식별자는 반드시 한 글자 이상으로 한다. 숫자 식별자의 경우 절대 앞에 0을 붙인 숫자로 표기하지 않는다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;예: 1.0.0-alpha, 1.0.0-alpha.1, 1.0.0-0.3.7, 1.0.0-x.7.z.92&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;빌드 메타데이터 식별자&lt;/h3&gt;
+&lt;p&gt;빌드 메타데이터는 수버전이나 정식배포 전 식별자 뒤에 더하기(+) 기호를 붙인 뒤에 마침표로 구분된 식별자를 덧붙여서 표현할 수 있다. 식별자는 반드시 아스키 문자와 숫자와 붙임표로만 구성한다 [0-9A-Za-z-]. 식별자는 반드시 한 글자 이상으로 한다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;예: 1.0.0-alpha+001, 1.0.0+20130313144700, 1.0.0-beta+exp.sha.5114f85&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Gatsby 블로그 개발 일지 - 3. md 파일 작성 시 태그 지정을 안했을 때 발생하는 에러 해결]]></title><description><![CDATA[md 파일 작성 시 태그 지정을 안했을 때 발생하는 에러를 해결하는 방법입니다. 지난번 글에서 태그 기능을 추가한 후 새로운 글을 포스팅했을 때 때음과 같은 에러가 발생하였습니다. 으로 development server를 열고 http…]]></description><link>https://greenblues.github.io/2021/gatsby-blog/3/</link><guid isPermaLink="false">https://greenblues.github.io/2021/gatsby-blog/3/</guid><pubDate>Tue, 09 Feb 2021 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;md 파일 작성 시 태그 지정을 안했을 때 발생하는 에러를 해결하는 방법입니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;지난번 글에서 태그 기능을 추가한 후 새로운 글을 포스팅했을 때 때음과 같은 에러가 발생하였습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Error: EnsureResources was not able to find resources for path: &amp;quot;http://localhost:8000/2021/how-to-install-homebrew-on-m1-mac/&amp;quot;
+This typically means that an issue occurred building components for that path.
+Run `gatsby clean` to remove any cached elements.&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby develop&lt;/code&gt;으로 development server를 열고 &lt;a href=&quot;http://localhost:8000/___graphql&quot;&gt;http://localhost:8000/___graphql&lt;/a&gt;로 들어가면 GraphiQL에 접속할 수 있습니다. 다음과 같은 쿼리를 실행시켜 tags가 없는 마크다운파일이 어떤 frontmatter를 반환하는지 알아봅시다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;query MyQuery {
+  markdownRemark {
+    frontmatter {
+      title
+      description
+      date
+      tags
+    }
+  }
+}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/754a090e1cc7e1e1a5e3bd5e635760ce/64289/3_graphql_error.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 63.92405063291139%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACe0lEQVQ4y42Ty27TQBSG/QhIPAEr9oanQSJIZEFKSFAKqEmTd+sCFpUQgqht0lwchzbx/TY33zOHY6ctzQKJI/06o2PPp3/mt5XvZ2fPxuPzd+vbTXO7NZqeHzSXq3XzarrY63r5dz3dry8nc9S+T2dac4LvjH9dtb5+O3+uLGbzt4wzIJSBH4TAGAfLduB2a8DGMGGzPdTWsMAwbZQFW5Tr+WBYDpjrDcyns0/KYjF/nbIEBBdZWZYFABSe5xXOxihIGBWcs4IzVrA7+Z5fRDgnlBaEVCIFJTT1/RAm0+uO8nN80bgxQxBJXiJMVpVnmXQDIX2SyGr2WIJyaRmBjAIqYxZLUYmKEgUrTe8qP8aXjRuXAo2zndwXJEkMcZpDUe5qTjW7Vyxi8AIKAQLiJEUjicReijgBbYXA8cWkYVoUylLu7hwiMKk3w35w0BEAgRMBc0m9RtghcKVpjXDDIaXFAzDP8ztHcOCwBqLD0A73QHQpeH3skjOxBy5mywbzY5CPHGZZduDsMZD7FMjaBaI7QH97wOxIcpeUPGKgrdddZblcNoIbBkmU/xdQ4Ea6DYAsLCAzs+qSWWHtcKVXQDyybTNIk6JKuQ4GgXK3u8/osIQQeEQuhUskcyKJDncIKwQGpGl6R9F1/Y0dcky1hPvC7xH+VXhnYHmkTjlNU0jxvtMsxyAz0Ne/PyqavnjlmaH0DcIwXRHHsfB9XziOI4IgEFEUHcixHWHemsJ2XHweCvy7RBBGrPrLptezI+Xo/dGT09Phi+FoqFYajUZqr9dTW62W2m631W63q3Y6nQcd947V4ecv6qDfV0/6A/XkpF+rPxi8bLc/PP0DPG6WLtckjlcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;GraphQL Error&quot;
+        title=&quot;GraphQL Error&quot;
+        src=&quot;/static/754a090e1cc7e1e1a5e3bd5e635760ce/f058b/3_graphql_error.png&quot;
+        srcset=&quot;/static/754a090e1cc7e1e1a5e3bd5e635760ce/c26ae/3_graphql_error.png 158w,
+/static/754a090e1cc7e1e1a5e3bd5e635760ce/6bdcf/3_graphql_error.png 315w,
+/static/754a090e1cc7e1e1a5e3bd5e635760ce/f058b/3_graphql_error.png 630w,
+/static/754a090e1cc7e1e1a5e3bd5e635760ce/40601/3_graphql_error.png 945w,
+/static/754a090e1cc7e1e1a5e3bd5e635760ce/78612/3_graphql_error.png 1260w,
+/static/754a090e1cc7e1e1a5e3bd5e635760ce/64289/3_graphql_error.png 2838w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Cannot return null for non-nullable field Frontmatter.tags라는 메시지가 나왔습니다. tags의 타입이 null을 허용하지 않고 있었네요. gatsby-node.js에서 tags의 타입을 확인해보면 다음과 같습니다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;createSchemaCustomization&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; actions &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; createTypes &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; action의
+
+  &lt;span class=&quot;token function&quot;&gt;createTypes&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+    ...
+
+    type Frontmatter {
+      title: String
+      description: String
+      date: Date @dateformat
+      tags: [String!]!
+    }
+
+    ...
+  &lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;gatsby-node.js에 다음과 같이 tags 필드의 타입이 [String!]!으로 정의 되어있습니다. GraphQL에서 스키마를 작성할 때 필드의 타입 뒤에 ”!”를 붙이면 non-nullable로 정의됩니다. 다음과 같이 ”!”를 지우겠습니다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;createSchemaCustomization&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; actions &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; createTypes &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; actions
+
+  &lt;span class=&quot;token function&quot;&gt;createTypes&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;    ...&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;    type Frontmatter {&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;      title: String&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;      description: String&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;      date: Date @dateformat&lt;/span&gt;
+&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;&lt;span class=&quot;token string&quot;&gt;      tags: [String!]&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;    }&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;    ...&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이제 실행시켜보면 정상적으로 쿼리가 됨을 확인할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e2dcfb43613ceeb22715971f035600e7/64289/3_graphql_fixed.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 63.92405063291139%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACUElEQVQ4y32T3Y7SQBTH+wgmPoFX3lefxkRM7IWsCIZIsrsu77YX64XGGJfsLlAKFLFQKP2ej37P8bSwZGtc/8kvncy0vznT00rfLy+fDQbf3i1+G4qxWiu24yrT+UK5HWrK3Xiq3I20ipE6U1RNV8aTOY6Rw3WI9wzHM+X6+q559eXrc0lTJ28JJRCEBBzXg5BQ2GwtWBprWK03YKzMCnNjgbVzYGe7YDse4oJlO2BZNqw3WzB1AyYj9ZOkaZPXMeHACEvyPM8AILNtO7OMdeZ7fkYpyQjZE4Zhteb7QRbgOCAlOE9I7Hg+DEdqW/p5fdNYmh6wKM1RJsqkSSJ2LhVOwEU59xBGmViartjsfMF8IljABAtZzlgE88WiI/0Y3DaWuxBCnhRiH4giDjxOIcuLcotylyNRHINp+WCtHKBuADSgAmUo5DCb6x1pcDNsmJsQ8rwoDhWiMKoehv3EkTKUMZQQ4FgRTxLgUSyQnPFoL5zPZg3PoBCH2VGYpmlNVBNi06gXohhPgRIU1YWaqjWIzaHIRXF4hZDgzv8UIpUkisvK7qkLp9Npw10SiPz0WOGjQsyhqv8I8cjbLYE4ysouV41BoSiK+x7VwzgX5TEfUCDZQdiWdF1/s/UodjWH++D3CI8ljhPsdJ04Saurvvj1UZrp2ivb9ISzDgh2FwvgzHEcZlkWc12X+b5fw8Y11/P/hpR/2Wisnkgn70+efD6/eHHRv5BL+v2+3O125WazKbdaLbnT6cjtdvtIr9eTT8/O5NPTOmfn5y9brQ9P/wDy3ZkK/YNlZQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;GraphQL Fixed&quot;
+        title=&quot;GraphQL Fixed&quot;
+        src=&quot;/static/e2dcfb43613ceeb22715971f035600e7/f058b/3_graphql_fixed.png&quot;
+        srcset=&quot;/static/e2dcfb43613ceeb22715971f035600e7/c26ae/3_graphql_fixed.png 158w,
+/static/e2dcfb43613ceeb22715971f035600e7/6bdcf/3_graphql_fixed.png 315w,
+/static/e2dcfb43613ceeb22715971f035600e7/f058b/3_graphql_fixed.png 630w,
+/static/e2dcfb43613ceeb22715971f035600e7/40601/3_graphql_fixed.png 945w,
+/static/e2dcfb43613ceeb22715971f035600e7/78612/3_graphql_fixed.png 1260w,
+/static/e2dcfb43613ceeb22715971f035600e7/64289/3_graphql_fixed.png 2838w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby 블로그 개발 일지 - 2. 태그 추가하기]]></title><description><![CDATA[같은 주제에 대한 글을 모아 볼 수 있도록 태그를 추가해봅시다. 목차 포스트에 태그 추가하기 태그 별 포스트 페이지 /tags 페이지 포스트에 태그 추가하기 마크다운 문서에서는 메타데이터를 YAML 헤더에 작성할 수 있습니다. title과 date…]]></description><link>https://greenblues.github.io/2021/gatsby-blog/2/</link><guid isPermaLink="false">https://greenblues.github.io/2021/gatsby-blog/2/</guid><pubDate>Sat, 30 Jan 2021 18:16:00 GMT</pubDate><content:encoded>&lt;p&gt;같은 주제에 대한 글을 모아 볼 수 있도록 태그를 추가해봅시다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;목차&lt;/h2&gt;
 &lt;ul&gt;
@@ -554,7 +726,9 @@ exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;Static Site Generator에 대해 검색해보니 Jekyll, Gatsby, Hugo 등 많은 선택지가 있었습니다. 그 중 한글 문서가 많고 리액트를 사용하는 Gatsby를 선택했습니다.&lt;/p&gt;
 &lt;h3&gt;Gatsby Cli 설치&lt;/h3&gt;
 &lt;p&gt;Gatsby를 시작하기 위해 &lt;code class=&quot;language-text&quot;&gt;npm install -g gatsby-cli&lt;/code&gt;로 Gatsby Cli를 전역으로 설치합니다. Gatsby Cli는 Gatsby 어플리케이션을 실행하고 배포를 위한 빌드 기능 등을 사용하기 위한 프로그램입니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;M1 맥을 사용하는 분들은 gatsby-cli를 설치하기 위한 npm upstream이 Node.js 버전 15.3.0 밑에서는 arm64와 호환이 되지 않습니다. 만약 애플 실리콘 네이티브로 개발을 하고 싶다면 꼭 Node.js 버전을 15.3.0 이상으로 업데이트해주세요!&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;M1 맥을 사용하는 분들은 gatsby-cli를 설치하기 위한 npm upstream이 Node.js 버전 15.3.0 밑에서는 arm64와 호환이 되지 않습니다. 만약 애플 실리콘 네이티브로 개발을 하고 싶다면 꼭 Node.js 버전을 &lt;strong&gt;15.3.0 이상&lt;/strong&gt;으로 업데이트해주세요!&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3&gt;Gatsby 스타터 선택&lt;/h3&gt;
 &lt;p&gt;Gatsby에는 다른 사용자들이 미리 만들어둔 다양한 &lt;a href=&quot;https://www.gatsbyjs.com/starters/?&quot;&gt;스타터&lt;/a&gt;들이 존재합니다. 저는 &lt;a href=&quot;https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/&quot;&gt;gatsby-starter-blog&lt;/a&gt;라는 미니멀한 스타터를 선택했습니다. 만들고 싶은 사이트의 목적에 따라 적합한 스타터를 골라 터미널에 &lt;code class=&quot;language-text&quot;&gt;gatsby new [폴더] [스타터-깃허브-주소]&lt;/code&gt;를 입력하면 지정한 폴더에 해당 스타터를 설치합니다.&lt;/p&gt;
 &lt;h3&gt;Gatsby Configuration&lt;/h3&gt;
@@ -643,4 +817,143 @@ site &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;이와 같이 스타터를 조금씩 수정하는 것만으로 편하게 사이트를 제작할 수 있습니다.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;이와 같이 스타터를 조금씩 수정하는 것만으로 편하게 사이트를 제작할 수 있습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[wasm code commit Allocation failed - process out of memory 에러]]></title><description><![CDATA[블로그를 만들기 위해 gatsby-cli를 설치..하려 했으나 설치에서부터 문제에 봉착 이것은 M1맥과 같이 애플 실리콘 기반 디바이스에서 발생하는 문제로 node.js 15.3.0에서 해결되었다. 업데이트 후 다시 npx gatsby-cli new…]]></description><link>https://greenblues.github.io/2021/error-log/20210125/</link><guid isPermaLink="false">https://greenblues.github.io/2021/error-log/20210125/</guid><pubDate>Sun, 24 Jan 2021 18:25:00 GMT</pubDate><content:encoded>&lt;p&gt;블로그를 만들기 위해 gatsby-cli를 설치..하려 했으나&lt;/p&gt;
+&lt;p&gt;설치에서부터 문제에 봉착&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell line-numbers&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;command-line-prompt&quot;&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;--- JS stacktrace ---&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+
+FATAL ERROR: wasm code commit Allocation failed - process out of memory
+ &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;: 0x100b4e9d8 node::Abort&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;/Users/woojeongmin/.nvm/versions/node/v14.15.4/bin/node&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+ &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;: 0x100b4eb58 node::errors::TryCatchScope::~TryCatchScope&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;/Users/woojeongmin/.nvm/versions/node/v14.15.4/bin/node&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+ &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;: 0x100c68384 v8::Utils::ReportOOMFailure&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;v8::internal::Isolate*, char const*, bool&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;/Users/woojeongmin/.nvm/versions/node/v14.15.4/bin/node&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+ 
+ &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+ 
+ &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;    &lt;span class=&quot;token number&quot;&gt;16407&lt;/span&gt; abort      npx gatsby-cli new gatsby-example&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이것은 M1맥과 같이 애플 실리콘 기반 디바이스에서 발생하는 문제로 &lt;a href=&quot;https://nodejs.org/ko/blog/release/v15.3.0/&quot;&gt;node.js 15.3.0&lt;/a&gt;에서 해결되었다.&lt;/p&gt;
+&lt;p&gt;업데이트 후 다시 npx gatsby-cli new gatsby-example 로 설치..하려 했으나&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell line-numbers&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;command-line-prompt&quot;&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;/span&gt;code &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; path /Users/woojeongmin/Projects/gatsby-example/node_modules/sharp
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; failed
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sh&lt;/span&gt; -c &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;node install/libvips &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; node install/dll-copy &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; prebuild-install --runtime&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;napi&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;node-gyp rebuild &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; node install/dll-copy&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; CC&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;target&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; Release/obj.target/nothing/&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;/node-addon-api/nothing.o
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;   LIBTOOL-STATIC Release/nothing.a
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;   TOUCH Release/obj.target/libvips-cpp.stamp
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;   CXX&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;target&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; Release/obj.target/sharp/src/common.o
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; info sharp Downloading https://github.com/lovell/sharp-libvips/releases/download/v8.9.1/libvips-8.9.1-darwin-arm64v8.tar.gz
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; sharp Prebuilt libvips &lt;span class=&quot;token number&quot;&gt;8.9&lt;/span&gt;.1 binaries are not yet available &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; darwin-arm64v8
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; info sharp Attempting to build from &lt;span class=&quot;token builtin class-name&quot;&gt;source&lt;/span&gt; via node-gyp but this may fail due to the above error
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; info sharp Please see https://sharp.pixelplumbing.com/install &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; required dependencies&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;libvips가 arm64를 지원하지 않아 실패&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/lovell/sharp/issues/2460#issuecomment-751491241&quot;&gt;다행히 최근에 애플 실리콘 네이티브를 지원하게 되었다고 한다.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;brew reinstall vips 로 다시 설치해주면&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell line-numbers&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;command-line-prompt&quot;&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;/span&gt;Your new Gatsby site has been successfully bootstrapped. Start developing it by running:
+
+  &lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; gatsby-example
+  gatsby develop&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;설치 성공&lt;/p&gt;
+&lt;p&gt;나와 같은 상황인 사람이 있어서 처음으로 &lt;a href=&quot;https://stackoverflow.com/questions/65856300/wasm-code-commit-allocation-failed-process-out-of-memory/65874139#65874139&quot;&gt;스택오버플로우 답변&lt;/a&gt;을 올렸다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[애플 실리콘 맥 Homebrew 설치 방법]]></title><description><![CDATA[애플 실리콘 맥에서 native Homebrew와 rosetta 2를 이용한 intel Homebrew를 설치하는 방법을 정리한 글입니다. soffes.blog/homebrew-on-apple-silicon를 참고하였습니다. 1. apple…]]></description><link>https://greenblues.github.io/2021/how-to-install-homebrew-on-m1-mac/</link><guid isPermaLink="false">https://greenblues.github.io/2021/how-to-install-homebrew-on-m1-mac/</guid><pubDate>Mon, 11 Jan 2021 07:48:00 GMT</pubDate><content:encoded>&lt;p&gt;애플 실리콘 맥에서 native Homebrew와 rosetta 2를 이용한 intel Homebrew를 설치하는 방법을 정리한 글입니다. &lt;a href=&quot;https://soffes.blog/homebrew-on-apple-silicon&quot;&gt;soffes.blog/homebrew-on-apple-silicon&lt;/a&gt;를 참고하였습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;1. apple silicon native homebrew 설치&lt;/h2&gt;
+&lt;p&gt;터미널을 열고 &lt;code class=&quot;language-text&quot;&gt;/opt/homebrew&lt;/code&gt; 폴더를 만들어 native homebrew를 설치한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell line-numbers&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;command-line-prompt&quot;&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;/span&gt;$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;mkdir&lt;/span&gt; -p /opt/homebrew
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;chown&lt;/span&gt; -R&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;whoami&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;:staff /opt/homebrew
+$ &lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; /opt
+$ &lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -L https://github.com/Homebrew/brew/tarball/master &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;tar&lt;/span&gt; xz --strip &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; -C homebrew&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이제 &lt;code class=&quot;language-text&quot;&gt;./zshrc&lt;/code&gt;에 환경변수를 설정해야한다. 초기 상태의 맥에 &lt;code class=&quot;language-text&quot;&gt;~/.zshrc&lt;/code&gt;가 없기 때문에 생성한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell line-numbers&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;command-line-prompt&quot;&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;touch&lt;/span&gt; ~/.zshrc
+&lt;span class=&quot;token function&quot;&gt;open&lt;/span&gt; ~/.zshrc&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;.zshrc&lt;/code&gt;를 열었으면 다음 내용을 작성 후 저장한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell line-numbers&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;command-line-prompt&quot;&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;# brew path&lt;/span&gt;
+&lt;span class=&quot;token builtin class-name&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;&lt;span class=&quot;token environment constant&quot;&gt;PATH&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/opt/homebrew/bin:/usr/local/bin:&lt;span class=&quot;token environment constant&quot;&gt;$PATH&lt;/span&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;2. intel homebrew&lt;/h2&gt;
+&lt;p&gt;다음은 x86_64 homebrew를 같이 쓰는 방법이다.&lt;/p&gt;
+&lt;p&gt;터미널을 열고 Rosseta 2를 이용해 설치한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell line-numbers&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;command-line-prompt&quot;&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;/span&gt;arch -x86_64 /bin/bash -c &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;~/.zshrc&lt;/code&gt;에 다음 내용을 작성 후 저장한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell line-numbers&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;command-line-prompt&quot;&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;# intel brew alias&lt;/span&gt;
+&lt;span class=&quot;token builtin class-name&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;ibrew&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;arch -x86_64 /usr/local/bin/brew&apos;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이제 brew로 native homebrew를, ibrew로 intel homebrew를 이용할 수 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[VS Code Life-saving Shortcuts]]></title><description><![CDATA[인생을 편하게 만들어주는 vscode 단축키 모음 Mac 조합키 일람 command(또는 cmd) ⌘ shift ⇧ option(또는 alt) ⌥ control(또는 ctrl) ⌃ caps lock ⇪ fn 자주 쓰는 바로가기 키[footnote]VS…]]></description><link>https://greenblues.github.io/2021/vscode-life-saving-shortcuts/</link><guid isPermaLink="false">https://greenblues.github.io/2021/vscode-life-saving-shortcuts/</guid><pubDate>Tue, 08 Dec 2020 15:56:00 GMT</pubDate><content:encoded>&lt;p&gt;인생을 편하게 만들어주는 vscode 단축키 모음&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;Mac 조합키 일람&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;command(또는 cmd) ⌘&lt;/li&gt;
+&lt;li&gt;shift ⇧&lt;/li&gt;
+&lt;li&gt;option(또는 alt) ⌥&lt;/li&gt;
+&lt;li&gt;control(또는 ctrl) ⌃&lt;/li&gt;
+&lt;li&gt;caps lock ⇪&lt;/li&gt;
+&lt;li&gt;fn&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4&gt;자주 쓰는 바로가기 키[footnote]VS Code의 모든 바로가기 키 모음은 다음으로 열 수 있다⌘ + K + ⌘+ S[/footnote]&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;주석 토글 ⌘ + /&lt;/li&gt;
+&lt;li&gt;자동 줄맞춤 (영역 선택 후) ⌘ + K + F&lt;/li&gt;
+&lt;li&gt;일치하는 괄호로 이동 ⇧ + ⌘ + \&lt;/li&gt;
+&lt;li&gt;편집기 탭 이동 ⌥ + ⌘ + ← or →&lt;/li&gt;
+&lt;li&gt;파일로 이동 ⌘ + P&lt;/li&gt;
+&lt;li&gt;줄 선택 ⌘ + L&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[MERN Stack Boilerplate]]></title><description><![CDATA[github.com/greenblues1190/MERN-stack-boilerplate 목차 사용법 MERN Stack이란? 에러 로그 기타 Dependencies 사용법  추가  으로 서버와 클라이언트 실행 Landing Page -> http…]]></description><link>https://greenblues.github.io/2021/mern-stack-boilerplate/</link><guid isPermaLink="false">https://greenblues.github.io/2021/mern-stack-boilerplate/</guid><pubDate>Wed, 02 Dec 2020 09:09:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/greenblues1190/MERN-stack-boilerplate&quot;&gt;github.com/greenblues1190/MERN-stack-boilerplate&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;목차&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;사용법&lt;/li&gt;
+&lt;li&gt;MERN Stack이란?&lt;/li&gt;
+&lt;li&gt;에러 로그&lt;/li&gt;
+&lt;li&gt;기타 Dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;사용법&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;/server/config/dev.js&lt;/code&gt; 추가&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm run dev&lt;/code&gt; 으로 서버와 클라이언트 실행&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Landing Page -&gt; &lt;a href=&quot;http://localhost:3000/&quot;&gt;http://localhost:3000/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Login Page -&gt; &lt;a href=&quot;http://localhost:3000/login&quot;&gt;http://localhost:3000/login&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Register Page -&gt; &lt;a href=&quot;http://localhost:3000/register&quot;&gt;http://localhost:3000/register&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;strong&gt;MERN&lt;/strong&gt; Stack이란?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;MongoDB : 데이터베이스&lt;/li&gt;
+&lt;li&gt;Express : 서버&lt;/li&gt;
+&lt;li&gt;React : 프론트&lt;/li&gt;
+&lt;li&gt;Node.js : 네트워크&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;패키지 설치 : &lt;code class=&quot;language-text&quot;&gt;npm install &amp;lt;package-name&amp;gt; --save&lt;/code&gt;[footnote]—save : dependencies에 추가하는 옵션, npm5부터 붙이지 않아도 디폴트로 설정되어 있음[/footnote]&lt;/p&gt;
+&lt;h3&gt;기타 Dependencies&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;백엔드&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mongoose : MongoDB를 활용하기 위한 모듈&lt;/li&gt;
+&lt;li&gt;nodemon[footnote]&lt;code class=&quot;language-text&quot;&gt;npm install nodemon --save-dev&lt;/code&gt; (—save-dev : devDependencies에 추가)[/footnote] : js 파일의 내용이 변경되면 이를 감지하고 서버를 재시작&lt;/li&gt;
+&lt;li&gt;bcrypt : 비밀번호 암호화&lt;/li&gt;
+&lt;li&gt;jsonwebtoken : Node.js에서 JWT를 생성하기 위한 모듈&lt;/li&gt;
+&lt;li&gt;body-parser[footnote]express에 빌트인되어 따로 임포트할 필요없음. 출처&lt;a href=&quot;https://expressjs.com/en/4x/api.html#express-json-middleware&quot;&gt;Express Docs&lt;/a&gt;[/footnote] : POST req의 파라미터를 쉽게 읽기 위한 parser&lt;/li&gt;
+&lt;li&gt;cookie-parser : 요청된 쿠키를 쉽게 읽기 위한 parser&lt;/li&gt;
+&lt;li&gt;concurretly : 다수의 커맨드를 동시에 실행할 수 있도록 하는 라이브러리, 서버와 클라이언트를 같이 실행시키기 위함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;프론트엔드&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;create-react-app (npx create-react-app.)&lt;/li&gt;
+&lt;li&gt;babel[footnote]create-react-app에 포함되어 있음[/footnote] : ES6 이상의 최신 문법으로 작성한 자바스크립트 코드를 최신 문법을 지원하지 않는 실행 환경에서 동작하도록 하는 transpiler&lt;/li&gt;
+&lt;li&gt;webpack[footnote]create-react-app에 포함되어 있음[/footnote]&lt;/li&gt;
+&lt;li&gt;react-router-dom&lt;/li&gt;
+&lt;li&gt;axios : node.js와 브라우저를 위한 http통신 라이브러리&lt;/li&gt;
+&lt;li&gt;ant-design : React UI 라이브러리&lt;/li&gt;
+&lt;li&gt;redux : state 관리 라이브러리&lt;/li&gt;
+&lt;li&gt;react-redux (version &gt; 7.1)&lt;/li&gt;
+&lt;li&gt;redux-promise : redux store가 promise를 accept할 수 있게 하기 위한 middleware&lt;/li&gt;
+&lt;li&gt;redux-thunk : redux store가 function를 accept할 수 있게 하기 위한 middleware&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;에러 로그&lt;/h3&gt;
+&lt;h4&gt;2020.12.07 깃 푸시 에러&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell line-numbers&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;command-line-prompt&quot;&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;span data-user=root data-host=localhost&gt;&lt;/span&gt;&lt;/span&gt;user$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push -u origin master
+react-blog abc$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to &lt;span class=&quot;token string&quot;&gt;&apos;https://github.com/greenblues1190/react-blog.git&apos;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;git show-ref&lt;/code&gt;으로 refs를 확인하니 최근 깃허브 기본 생성 브랜치 이름이 master에서 main으로 바뀜에 따라 ref이 &lt;code class=&quot;language-text&quot;&gt;refs/heads/main&lt;/code&gt;으로 되어있었다. &lt;code class=&quot;language-text&quot;&gt;git push -u origin main&lt;/code&gt;을 쓰니 에러없이 푸시되었다.&lt;/p&gt;</content:encoded></item></channel></rss>
