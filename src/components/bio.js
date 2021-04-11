@@ -62,11 +62,11 @@ const Bio = () => {
             Github
           </a>
           {` `}
-          <a href={`https://github.com/${social?.github || ``}`}>
+          <a href={`https://instagram.com/${social?.instagram || ``}`}>
             Instagram
           </a>
           {` `}
-          <a href={`https://github.com/${social?.github || ``}`}>
+          <a href={`https://soundcloud.com/${social?.soundcloud || ``}`}>
             Soundcloud
           </a>
         </p>
