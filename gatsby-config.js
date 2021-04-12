@@ -6,7 +6,7 @@ module.exports = {
       summary: `안동에 살면서 웹 개발, 미디어 아트를 하고 있는`,
     },
     description: `안동에 살면서 웹 개발, 미디어 아트를 하고 있는 우정민입니다.`,
-    siteUrl: `https://greenblues.github.io/`,
+    siteUrl: `https://dev.jeongminwoo.com/`,
     social: {
       github: `greenblues1190`,
       instagram: `srrlmnth`,
@@ -137,6 +137,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-cname',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
