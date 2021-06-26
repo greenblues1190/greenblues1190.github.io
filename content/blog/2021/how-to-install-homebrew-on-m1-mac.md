@@ -10,7 +10,7 @@ tags:
 
 ---
 
-## 1\. apple silicon native homebrew 설치
+## apple silicon native homebrew 설치
 
 터미널을 열고 `/opt/homebrew` 폴더를 만들어 native homebrew를 설치한다.
 
@@ -35,7 +35,7 @@ open ~/.zshrc
 export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 ```
 
-## 2\. intel homebrew
+## intel homebrew 설치
 
 다음은 x86\_64 homebrew를 같이 쓰는 방법이다.
 

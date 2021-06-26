@@ -9,15 +9,7 @@ tags:
 
 ---
 
-## 목차
-- 사용법
-- MERN Stack이란?
-- 에러 로그
-- 기타 Dependencies
-
----
-
-### 사용법
+## 사용법
 
 1. `/server/config/dev.js` 추가
 
@@ -31,7 +23,7 @@ Register Page -> http://localhost:3000/register
 
 ---
 
-### **MERN** Stack이란?
+## MERN Stack이란?
 
 - MongoDB : 데이터베이스
 
@@ -43,7 +35,7 @@ Register Page -> http://localhost:3000/register
 
 패키지 설치 : `npm install <package-name> --save`\[footnote\]--save : dependencies에 추가하는 옵션, npm5부터 붙이지 않아도 디폴트로 설정되어 있음\[/footnote\]
 
-### 기타 Dependencies
+## 기타 Dependencies
 
 - 백엔드
 
@@ -85,9 +77,9 @@ Register Page -> http://localhost:3000/register
 
 ---
 
-### 에러 로그
+## 에러 로그
 
-#### 2020.12.07 깃 푸시 에러
+### 2020.12.07 깃 푸시 에러
 
 ```shell
 user$ git push -u origin master

@@ -6,7 +6,7 @@ module.exports = {
       summary: `안동에 살면서 웹 개발, 미디어 아트를 하고 있는`,
     },
     description: `안동에 살면서 웹 개발, 미디어 아트를 하고 있는 우정민입니다.`,
-    siteUrl: `https://dev.jeongminwoo.com/`,
+    siteUrl: `https://jeongminwoo.com/`,
     social: {
       github: `greenblues1190`,
       instagram: `srrlmnth`,
@@ -45,6 +45,21 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              className: `anchor-header`, // 이 class명으로 하이라이트 코드를 구현할 예정이므로 반드시 넣자.
+              maintainCase: false, // 이 부분은 반드시 false로 하자. url이 대소문자를 구분하기 때문에 링크가 작동하지 않을 수 있다.
+              removeAccents: true,
+              elements: [`h2`, 'h3', `h4`], // 링크를 추가할 Header 종류 선택
+            },
+          },
+          {
+            resolve: 'gatsby-remark-code-titles',
+            // options: {
+            //   className: 'gatsby-remark-code-title',
+            // },
+          }, // IMPORTANT: this must be ahead of other plugins that use code blocks
           {
             resolve: `gatsby-remark-prismjs`,
             options: {

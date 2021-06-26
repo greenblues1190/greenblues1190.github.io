@@ -34,6 +34,7 @@
     Times, serif;
   --font-body: var(--fontFamily-sans);
   --font-heading: var(--fontFamily-sans);
+  --fontWeight-light: 300;
   --fontWeight-normal: 400;
   --fontWeight-medium: 500;
   --fontWeight-semibold: 600;
@@ -347,12 +348,76 @@ a:focus {
 }
 
 /**
+ * table of contents
+ */
+.toc {
+  font-weight: var(--fontWeight-light);
+  font-size: var(--fontSize-1);
+  position: fixed;
+  left: calc(50% + 360px);
+  top: calc(50%);
+  transform: translate(0, -50%);
+}
+
+.toc ul {
+  list-style: none;
+  margin: 0px;
+  padding-bottom: 0.2rem;
+  margin-left: 12px;
+}
+
+.toc ul li {
+  display: block;
+  margin: 0px;
+  text-decoration: none;
+  color: black;
+}
+
+.toc ul li p{
+  margin: 0px;
+}
+
+.toc ul a {
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.toc ul a:hover {
+  color: black;
+  background-color: #e9ddc5;
+}
+
+/**
+ * gatsby-remark-code-titles
+ */
+ .gatsby-code-title {
+  position: relative;
+  /* width: auto; */
+  margin-bottom: -0.3rem;
+  padding: 0.2em 1em;
+  font-family: 'Menlo', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+    'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+    monospace;
+  font-size: var(--fontSize-0);
+
+  /* background-color: #d1dce5; */
+  background: linear-gradient(#EAEAEA, #d5d5d5);
+  color: black;
+  z-index: 100;
+
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+}
+
+/**
  * Add back the container background-color, border-radius, padding, margin
  * and overflow that we removed from <pre>.
  */
  .gatsby-highlight {
   margin-bottom: var(--spacing-8);
-  /* background-color: #1D1F21; atom color */
+  /* background-color: #1D1F21; */
   background-color: #0C0C0C;
   border-radius: 0.3em;
   /* margin: 0.5em 0; */
