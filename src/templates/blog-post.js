@@ -135,11 +135,6 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
-      headings {
-        depth
-        id
-        value
-      }
       tableOfContents
       frontmatter {
         title

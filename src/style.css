@@ -351,10 +351,11 @@ a:focus {
  * table of contents
  */
 .toc {
+  width: 200px;
   font-weight: var(--fontWeight-light);
-  font-size: var(--fontSize-1);
+  font-size: var(--fontSize-0);
   position: fixed;
-  left: calc(50% + 360px);
+  left: calc(50% + 350px);
   top: calc(50%);
   transform: translate(0, -50%);
 }
@@ -371,10 +372,16 @@ a:focus {
   margin: 0px;
   text-decoration: none;
   color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.toc ul li p{
+.toc p{
   margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .toc ul a {
