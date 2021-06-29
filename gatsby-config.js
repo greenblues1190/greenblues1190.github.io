@@ -5,6 +5,7 @@ module.exports = {
       name: `우정민`,
       summary: `웹 개발, 미디어 아트를 하고 있는`,
     },
+    keywords: `frontend, react, gatsby, web, dev, javascript, 프론트엔드, 리액트, 개츠비, 웹개발, 자바스크립트`,
     description: `웹 개발, 미디어 아트를 하고 있는 우정민입니다.`,
     siteUrl: `https://woojeongmin.com/`,
     social: {
@@ -13,6 +14,7 @@ module.exports = {
       soundcloud: `srrlmnth`,
       twitter: `greenblues1190`,
     },
+    defaultImage: `default-image.png`,
   },
   plugins: [
     {
@@ -159,12 +161,24 @@ module.exports = {
         shortname: `jeongminwoo`,
       },
     },
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Noto+Sans+KR\:100,300,400,500,700,900`],
         display: "swap",
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://woojeongmin.com/',
+        sitemap: 'https://woojeongmin.com/sitemap.xml',
+        policy: [{
+          userAgent: '*',
+          allow: '/'
+        }]
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

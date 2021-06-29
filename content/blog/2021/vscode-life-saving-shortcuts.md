@@ -3,6 +3,7 @@ title: "VS Code Life-saving Shortcuts"
 date: "2020-12-09 00:56:00"
 tags:
   - Vscode
+cover: "vscode-life-saving-shortcuts.png"
 ---
 
 인생을 편하게 만들어주는 vscode 단축키 모음
