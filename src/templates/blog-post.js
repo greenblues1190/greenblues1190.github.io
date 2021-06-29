@@ -6,48 +6,51 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Toc from "../components/toc"
+import { Disqus } from "gatsby-plugin-disqus"
 
 // const HEADER_OFFSET_Y = 116;
-const HEADER_OFFSET_Y = 0;
+const HEADER_OFFSET_Y = 0
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
   const [CurrentHeaderUrl, setCurrentHeaderUrl] = useState(undefined)
+  const disqusConfig = {
+    url: data.site.siteMetadata.siteUrl + location.pathname,
+    identifier: post.id,
+    title: post.frontmatter.title,
+  }
 
   useEffect(() => {
     const handleScroll = () => {
-      let aboveHeaderUrl;
-      const currentOffsetY = window.pageYOffset;
-      const headerElements = document.querySelectorAll('.anchor-header');
+      let aboveHeaderUrl
+      const currentOffsetY = window.pageYOffset
+      const headerElements = document.querySelectorAll(".anchor-header")
       for (const elem of headerElements) {
-        const { top } = elem.getBoundingClientRect();
-        const elemTop = top + currentOffsetY;
-        const isLast = elem === headerElements[headerElements.length - 1];
+        const { top } = elem.getBoundingClientRect()
+        const elemTop = top + currentOffsetY
+        const isLast = elem === headerElements[headerElements.length - 1]
         if (currentOffsetY < elemTop - HEADER_OFFSET_Y) {
           aboveHeaderUrl &&
-            setCurrentHeaderUrl(aboveHeaderUrl.split(location.origin)[1]);
-          !aboveHeaderUrl && setCurrentHeaderUrl(undefined);
-          break;
+            setCurrentHeaderUrl(aboveHeaderUrl.split(location.origin)[1])
+          !aboveHeaderUrl && setCurrentHeaderUrl(undefined)
+          break
         } else {
-          isLast && setCurrentHeaderUrl(elem.href.split(location.origin)[1]);
-          !isLast && (aboveHeaderUrl = elem.href);
+          isLast && setCurrentHeaderUrl(elem.href.split(location.origin)[1])
+          !isLast && (aboveHeaderUrl = elem.href)
         }
       }
-    };
+    }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll)
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   return (
-    <Layout
-      location={location}
-      title={siteTitle}
-    >
+    <Layout location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -76,10 +79,12 @@ const BlogPostTemplate = ({ data, location }) => {
             <ul>
               {post.frontmatter.tags
                 ? post.frontmatter.tags.map(tag => (
-                  <li key={kebabCase(tag)}>
-                    <Link to={`/tags/${kebabCase(tag)}`}>{kebabCase(tag)}</Link>
-                  </li>
-                ))
+                    <li key={kebabCase(tag)}>
+                      <Link to={`/tags/${kebabCase(tag)}`}>
+                        {kebabCase(tag)}
+                      </Link>
+                    </li>
+                  ))
                 : null}
             </ul>
           </div>
@@ -113,6 +118,7 @@ const BlogPostTemplate = ({ data, location }) => {
             </li>
           </ul>
         </nav>
+        <Disqus config={disqusConfig} />
       </div>
     </Layout>
   )
@@ -129,6 +135,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(id: { eq: $id }) {

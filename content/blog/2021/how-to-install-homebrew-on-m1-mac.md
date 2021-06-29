@@ -2,8 +2,8 @@
 title: "애플 실리콘 맥 Homebrew 설치 방법"
 date: "2021-01-11 16:48:00"
 tags:
-    - M1 Mac
-    - Homebrew
+  - M1 Mac
+  - Homebrew
 ---
 
 애플 실리콘 맥에서 native Homebrew와 rosetta 2를 이용한 intel Homebrew를 설치하는 방법을 정리한 글입니다. [soffes.blog/homebrew-on-apple-silicon](https://soffes.blog/homebrew-on-apple-silicon)를 참고하였습니다.
@@ -37,7 +37,7 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 
 ## intel homebrew 설치
 
-다음은 x86\_64 homebrew를 같이 쓰는 방법이다.
+다음은 x86_64 homebrew를 같이 쓰는 방법이다.
 
 터미널을 열고 Rosseta 2를 이용해 설치한다.
 

@@ -44,7 +44,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
 
-  let tags = new Set();
+  let tags = new Set()
 
   if (posts.length > 0) {
     posts.forEach((post, index) => {
@@ -62,7 +62,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
 
       if (post.frontmatter.tags) {
-        post.frontmatter.tags.forEach((tag) => {
+        post.frontmatter.tags.forEach(tag => {
           tags.add(tag)
         })
       }

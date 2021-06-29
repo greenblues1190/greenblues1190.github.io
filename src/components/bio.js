@@ -56,11 +56,9 @@ const Bio = () => {
       )}
       {author?.name && (
         <p>
-          {author?.summary || null}  <strong>{author.name}</strong>입니다.
+          {author?.summary || null} <strong>{author.name}</strong>입니다.
           {` `}
-          <a href={`https://github.com/${social?.github || ``}`}>
-            Github
-          </a>
+          <a href={`https://github.com/${social?.github || ``}`}>Github</a>
           {` `}
           <a href={`https://instagram.com/${social?.instagram || ``}`}>
             Instagram

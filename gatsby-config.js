@@ -51,11 +51,11 @@ module.exports = {
               className: `anchor-header`, // 이 class명으로 하이라이트 코드를 구현할 예정이므로 반드시 넣자.
               maintainCase: false, // 이 부분은 반드시 false로 하자. url이 대소문자를 구분하기 때문에 링크가 작동하지 않을 수 있다.
               removeAccents: true,
-              elements: [`h2`, 'h3', `h4`], // 링크를 추가할 Header 종류 선택
+              elements: [`h2`, `h3`, `h4`], // 링크를 추가할 Header 종류 선택
             },
           },
           {
-            resolve: 'gatsby-remark-code-titles',
+            resolve: `gatsby-remark-code-titles`,
             // options: {
             //   className: 'gatsby-remark-code-title',
             // },
@@ -152,7 +152,20 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-cname',
+    `gatsby-plugin-cname`,
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `jeongminwoo`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Noto+Sans+KR\:100,300,400,500,700,900`],
+        display: "swap",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

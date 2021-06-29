@@ -2,7 +2,7 @@
 title: "MERN Stack Boilerplate"
 date: "2020-12-02 18:09:00"
 tags:
-    - MERN
+  - MERN
 ---
 
 [github.com/greenblues1190/MERN-stack-boilerplate](https://github.com/greenblues1190/MERN-stack-boilerplate)
@@ -39,41 +39,41 @@ Register Page -> http://localhost:3000/register
 
 - 백엔드
 
-    - mongoose : MongoDB를 활용하기 위한 모듈
+  - mongoose : MongoDB를 활용하기 위한 모듈
 
-    - nodemon\[footnote\]`npm install nodemon --save-dev` (--save-dev : devDependencies에 추가)\[/footnote\] : js 파일의 내용이 변경되면 이를 감지하고 서버를 재시작
+  - nodemon\[footnote\]`npm install nodemon --save-dev` (--save-dev : devDependencies에 추가)\[/footnote\] : js 파일의 내용이 변경되면 이를 감지하고 서버를 재시작
 
-    - bcrypt : 비밀번호 암호화
+  - bcrypt : 비밀번호 암호화
 
-    - jsonwebtoken : Node.js에서 JWT를 생성하기 위한 모듈
+  - jsonwebtoken : Node.js에서 JWT를 생성하기 위한 모듈
 
-    - body-parser\[footnote\]express에 빌트인되어 따로 임포트할 필요없음. 출처[Express Docs](https://expressjs.com/en/4x/api.html#express-json-middleware)\[/footnote\] : POST req의 파라미터를 쉽게 읽기 위한 parser
+  - body-parser\[footnote\]express에 빌트인되어 따로 임포트할 필요없음. 출처[Express Docs](https://expressjs.com/en/4x/api.html#express-json-middleware)\[/footnote\] : POST req의 파라미터를 쉽게 읽기 위한 parser
 
-    - cookie-parser : 요청된 쿠키를 쉽게 읽기 위한 parser
+  - cookie-parser : 요청된 쿠키를 쉽게 읽기 위한 parser
 
-    - concurretly : 다수의 커맨드를 동시에 실행할 수 있도록 하는 라이브러리, 서버와 클라이언트를 같이 실행시키기 위함
+  - concurretly : 다수의 커맨드를 동시에 실행할 수 있도록 하는 라이브러리, 서버와 클라이언트를 같이 실행시키기 위함
 
 - 프론트엔드
 
-    - create-react-app (npx create-react-app.)
+  - create-react-app (npx create-react-app.)
 
-    - babel\[footnote\]create-react-app에 포함되어 있음\[/footnote\] : ES6 이상의 최신 문법으로 작성한 자바스크립트 코드를 최신 문법을 지원하지 않는 실행 환경에서 동작하도록 하는 transpiler
+  - babel\[footnote\]create-react-app에 포함되어 있음\[/footnote\] : ES6 이상의 최신 문법으로 작성한 자바스크립트 코드를 최신 문법을 지원하지 않는 실행 환경에서 동작하도록 하는 transpiler
 
-    - webpack\[footnote\]create-react-app에 포함되어 있음\[/footnote\]
+  - webpack\[footnote\]create-react-app에 포함되어 있음\[/footnote\]
 
-    - react-router-dom
+  - react-router-dom
 
-    - axios : node.js와 브라우저를 위한 http통신 라이브러리
+  - axios : node.js와 브라우저를 위한 http통신 라이브러리
 
-    - ant-design : React UI 라이브러리
+  - ant-design : React UI 라이브러리
 
-    - redux : state 관리 라이브러리
+  - redux : state 관리 라이브러리
 
-    - react-redux (version > 7.1)
+  - react-redux (version > 7.1)
 
-    - redux-promise : redux store가 promise를 accept할 수 있게 하기 위한 middleware
+  - redux-promise : redux store가 promise를 accept할 수 있게 하기 위한 middleware
 
-    - redux-thunk : redux store가 function를 accept할 수 있게 하기 위한 middleware
+  - redux-thunk : redux store가 function를 accept할 수 있게 하기 위한 middleware
 
 ---
 

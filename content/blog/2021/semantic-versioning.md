@@ -2,7 +2,7 @@
 title: "유의적 버전 (Semantic Versioning)"
 date: "2021-03-02 13:32:00"
 tags:
-    - Web
+  - Web
 ---
 
 유의적 버전 2.0.0 정리. ([semver.org/lang/ko/](https://semver.org/lang/ko/))
