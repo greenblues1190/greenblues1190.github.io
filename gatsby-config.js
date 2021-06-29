@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Woo, Jeongmin`,
+    title: `woo jeongmin`,
     author: {
       name: `우정민`,
-      summary: `안동에 살면서 웹 개발, 미디어 아트를 하고 있는`,
+      summary: `웹 개발, 미디어 아트를 하고 있는`,
     },
-    description: `안동에 살면서 웹 개발, 미디어 아트를 하고 있는 우정민입니다.`,
-    siteUrl: `https://jeongminwoo.com/`,
+    description: `웹 개발, 미디어 아트를 하고 있는 우정민입니다.`,
+    siteUrl: `https://woojeongmin.com/`,
     social: {
       github: `greenblues1190`,
       instagram: `srrlmnth`,
