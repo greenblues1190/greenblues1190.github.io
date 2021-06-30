@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://woojeongmin.com/sitemap.xml
+Sitemap: https://woojeongmin.com/sitemap/sitemap-index.xml
 Host: https://woojeongmin.com
