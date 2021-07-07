@@ -258,8 +258,17 @@ a:focus {
 }
 
 .main-heading {
-  font-size: var(--fontSize-7);
+  font-family: "Noto Sans";
+  font-size: var(--fontSize-5);
   margin: 0;
+
+}
+
+.heading-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-4);
 }
 
 .post-list-item {
@@ -282,14 +291,6 @@ a:focus {
   margin-bottom: var(--spacing-4);
 }
 
-.header-link-home {
-  font-weight: var(--fontWeight-normal);
-  font-family: var(--font-heading);
-  text-decoration: none;
-  color:var(--color-heading);
-  font-size: var(--fontSize-2);
-}
-
 .bio {
   display: flex;
   margin-bottom: var(--spacing-16);
@@ -307,13 +308,13 @@ a:focus {
 }
 
 .bio-social-link {
+  font-family: "Noto Sans", Helvetica;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: var(--spacing-2);
   margin: 0;
   font-size: 1rem;
-  /* height: 60px; */
 }
 
 .bio-social-link img {

@@ -10,11 +10,11 @@ module.exports = {
     siteUrl: `https://woojeongmin.com/`,
     social: {
       github: `greenblues1190`,
-      instagram: `srrlmnth`,
+      instagram: `woo.jeongmin`,
       soundcloud: `srrlmnth`,
       twitter: `greenblues1190`,
     },
-    defaultImage: `default-image.png`,
+    defaultImage: `social-card.png`,
   },
   plugins: [
     {
@@ -150,7 +150,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -158,7 +158,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `jeongminwoo`,
+        shortname: `woojeongmin`,
       },
     },
     `gatsby-plugin-sitemap`,
@@ -173,7 +173,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://woojeongmin.com/',
-        sitemap: 'https://woojeongmin.com/sitemap.xml',
+        sitemap: 'https://woojeongmin.com/sitemap/sitemap-index.xml',
         policy: [{
           userAgent: '*',
           allow: '/'
