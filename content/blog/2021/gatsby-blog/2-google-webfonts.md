@@ -13,7 +13,7 @@ tags:
 
 `Noto Sans KR` 폰트를 로드한다고 했을 때 `gatsby-config.js`를 아래와 같이 수정합니다.
 
-```js:title="gatsby-config.js"
+```js:title=gatsby-config.js
 module.exports = {
   plugins: [
     {
@@ -33,7 +33,7 @@ module.exports = {
 
 이제 font-family에 로드한 웹폰트를 넣어 사용할 수 있습니다.
 
-```css:title="src/style.css"
+```css:title=src/style.css
 body {
   ...
   font-family: "Noto Sans KR", ...;

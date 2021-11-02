@@ -22,6 +22,7 @@ const BlogPostTemplate = ({ data, location }) => {
     title: post.frontmatter.title,
   }
 
+  // TODO: toc anchor link highlighting following scroll
   // useEffect(() => {
   //   const handleScroll = () => {
   //     let aboveHeaderUrl
@@ -42,7 +43,6 @@ const BlogPostTemplate = ({ data, location }) => {
   //       }
   //     }
   //   }
-
   //   window.addEventListener("scroll", handleScroll)
   //   return () => {
   //     window.removeEventListener("scroll", handleScroll)

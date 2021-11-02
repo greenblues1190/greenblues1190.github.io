@@ -18,7 +18,7 @@ tags:
 `gatsby-config.js`에 다음과 같이 설정합니다. Disqus 가입 시 적은 shortname을 아래와 같이 options에 꼭 추가해주세요.
 
 
-```diff-js:title="gatsby-config.js"
+```diff-js:title=gatsby-config.js
 module.exports = {
   plugins: [
 +    {
@@ -33,7 +33,7 @@ module.exports = {
 
 Disqus 컴포넌트를 `blog-post.js`에 추가합니다. Disqus에서는 댓글들을 discussion이라는 곳에 저장하는데, discussion은 Disqus의 config 프로퍼티를 참고하여 생성됩니다. url은 해당 포스트의 url, identifier는 해당 댓글이 작성될 discussion의 id, title은 해당 discussion의 타이틀입니다. url은 포스트를 수정하면서 쉽게 변경될 수 있으니 꼭 identifier를 같이 전달합시다. title은 포스트의 타이틀 그대로 사용했습니다. 컴포넌트를 추가한 사진은 아래와 같습니다.
 
-```diff-jsx:title="src/templates/blog-post.js"
+```diff-jsx:title=src/templates/blog-post.js
 +import { Disqus } from "gatsby-plugin-disqus"
 
 const BlogPostTemplate = ({ data, location }) => {
@@ -74,7 +74,7 @@ export const pageQuery = graphql`
 
 위 사진과 같이 `index.js`의 포스트 프리뷰에 댓글 수를 나타내기 위해 `<CommentCount>` 컴포넌트를 사용할 수 있습니다. 이 때 프로퍼티로 들어가는 config은 `blog-post.js`에서 `<Disqus>`에 전달한 config과 동일해야 합니다. 추가적으로 꾸미기 위해 [heroicons](https://heroicons.com/)에서 댓글 아이콘을 가져왔습니다.
 
-```diff-jsx:title="src/pages/index.js"
+```diff-jsx:title=src/pages/index.js
 import { CommentCount } from "gatsby-plugin-disqus"
 ...
 +import { Disqus } from "gatsby-plugin-disqus왔
@@ -140,7 +140,7 @@ const BlogIndex = ({ data, location }) => {
 }
 ```
 
-```css:title="src/style.css"
+```css:title=src/style.css
 .postPreview {
   display: flex;
   flex-wrap: wrap;

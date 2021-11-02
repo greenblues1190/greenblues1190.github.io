@@ -14,9 +14,9 @@ Vanilla JS로 구현한 MVC To-Do List
 
 ![Vanilla JS MVC ToDoList](./vanilla-js-mvc-todolist.png)
 
-https://woojeongmin.com/vanilla-js-mvc-todolist/
+[데모 링크](https://woojeongmin.com/vanilla-js-mvc-todolist/)
 
-항목 추가, 완료, 삭제가 가능한 기초적인 앱이다.  코드는 다음에서 볼 수 있다.
+항목 추가, 완료, 삭크가 가능한 기초적인 앱이다.  코드는 다음에서 볼 수 있다.
 
 https://github.com/greenblues1190/vanilla-js-mvc-todolist
 
