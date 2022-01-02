@@ -1,4 +1,191 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[woo jeongmin]]></title><description><![CDATA[웹 개발, 미디어 아트를 하고 있는 우정민입니다.]]></description><link>https://woojeongmin.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Dec 2021 09:45:57 GMT</lastBuildDate><item><title><![CDATA[바닐라 JS로 MVC To-Do List 구현하기]]></title><description><![CDATA[구조 Model–view–controller (MVC) is a software design pattern commonly used for developing user interfaces that divide the related program…]]></description><link>https://woojeongmin.com/2021/vanilla-js-mvc-todolist/</link><guid isPermaLink="false">https://woojeongmin.com/2021/vanilla-js-mvc-todolist/</guid><pubDate>Thu, 23 Dec 2021 08:33:26 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[woo jeongmin]]></title><description><![CDATA[웹 개발, 미디어 아트를 하고 있는 우정민입니다.]]></description><link>https://woojeongmin.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Jan 2022 14:37:59 GMT</lastBuildDate><item><title><![CDATA[SSAFY 7기 선발 과정과 전공자 합격 후기]]></title><description><![CDATA[🗣 앞으로 SSAFY를 지원할 예비 지원자분들을 위해 이 글을 작성합니다. SSAFY의 선발 과정과 제가 어떻게 준비했는지 공유합니다. 선발 대상 만 29세 이하 국내외…]]></description><link>https://woojeongmin.com/2022/ssafy-review/</link><guid isPermaLink="false">https://woojeongmin.com/2022/ssafy-review/</guid><pubDate>Sun, 02 Jan 2022 13:43:16 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;🗣 앞으로 SSAFY를 지원할 예비 지원자분들을 위해 이 글을 작성합니다. SSAFY의 선발 과정과 제가 어떻게 준비했는지 공유합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;선발-대상&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%A0%EB%B0%9C-%EB%8C%80%EC%83%81&quot; aria-label=&quot;선발 대상 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;선발 대상&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 만 29세 이하&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 국내외 4년제 대학 졸업자 및 졸업예정자 (전공 무관)&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; 현재 미취업자&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;선발-프로세스&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%A0%EB%B0%9C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4&quot; aria-label=&quot;선발 프로세스 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;선발 프로세스&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;지원서 접수 - 10.25 ~ 11.8, 온라인&lt;/li&gt;
+&lt;li&gt;에세이 접수 - 11.9 ~ 11.21, 온라인&lt;/li&gt;
+&lt;li&gt;1차 SW 적성진단 - 11.13, 온라인 (결과 발표 11.29)&lt;/li&gt;
+&lt;li&gt;2차 SW 적성진단, Interview - 12.8, 오프라인 (결과 발표 12.20)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;지원서-접수&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A7%80%EC%9B%90%EC%84%9C-%EC%A0%91%EC%88%98&quot; aria-label=&quot;지원서 접수 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;지원서 접수&lt;/h2&gt;
+&lt;p&gt;전공 여부, 경력 사항, 희망 지역 외에는 큰 의미가 없다고 생각합니다. SSAFY는 비전공자, 그리고 개발 역량이 부족한 전공자들을 위한 교육과정이기 때문에 부담갖지 말고 지원하세요.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;에세이&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%97%90%EC%84%B8%EC%9D%B4&quot; aria-label=&quot;에세이 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;에세이&lt;/h2&gt;
+&lt;p&gt;항목 수, 주제, 제한 글자 수는 매년 바뀌는 것 같습니다.&lt;/p&gt;
+&lt;p&gt;입사를 위한 자기소개서가 아니므로 개발 역량보다 자신이 교육에서 얻고자 하는 바를 솔직하고 설득력있게 쓰는 것이 중요하다고 생각했습니다. 그렇기 때문에 겪은 경험을 토대로 근거를 들며 약 1년동안 진행되는 과정을 완주할 수 있을만큼의 성실함과 이 교육이 저에게 꼭 필요한 이유를 어필했습니다. 아래는 제가 세웠던 에세이 작성 전략입니다. 각 항목에 답해보며 자신이 무엇을 말하고 싶은지 고민해보면 도움이 될 것 같습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h4 id=&quot;누가-작성한-글인가-저자&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%88%84%EA%B0%80-%EC%9E%91%EC%84%B1%ED%95%9C-%EA%B8%80%EC%9D%B8%EA%B0%80-%EC%A0%80%EC%9E%90&quot; aria-label=&quot;누가 작성한 글인가 저자 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;누가 작성한 글인가 (저자)&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;나&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;전공자&lt;/li&gt;
+&lt;li&gt;경력 없음&lt;/li&gt;
+&lt;li&gt;웹 프론트엔드 개발 지망&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h4 id=&quot;어떤-생각을-작성한-것인가-주제&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%96%B4%EB%96%A4-%EC%83%9D%EA%B0%81%EC%9D%84-%EC%9E%91%EC%84%B1%ED%95%9C-%EA%B2%83%EC%9D%B8%EA%B0%80-%EC%A3%BC%EC%A0%9C&quot; aria-label=&quot;어떤 생각을 작성한 것인가 주제 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;어떤 생각을 작성한 것인가 (주제)&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;지원 동기가 무엇이며 어떤 개발자가 되고 싶은지&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;경험을 토대로, 극복을 중심으로&lt;/li&gt;
+&lt;li&gt;과장되지 않은 나의 솔직한 생각을 작성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h4 id=&quot;누구에게-생각을-전달하고-싶은가-독자&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%88%84%EA%B5%AC%EC%97%90%EA%B2%8C-%EC%83%9D%EA%B0%81%EC%9D%84-%EC%A0%84%EB%8B%AC%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9D%80%EA%B0%80-%EB%8F%85%EC%9E%90&quot; aria-label=&quot;누구에게 생각을 전달하고 싶은가 독자 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;누구에게 생각을 전달하고 싶은가 (독자)&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SSAFY 교육자&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;지원자의 간절함, 성실성을 알고싶어 함&lt;/li&gt;
+&lt;li&gt;작성한 내용에 대한 &lt;strong&gt;근거&lt;/strong&gt;가 있어야 신뢰&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;1차-sw-적성진단&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1%EC%B0%A8-sw-%EC%A0%81%EC%84%B1%EC%A7%84%EB%8B%A8&quot; aria-label=&quot;1차 sw 적성진단 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1차 SW 적성진단&lt;/h2&gt;
+&lt;p&gt;적성진단은 &lt;em&gt;수리/추리 논리 능력 진단&lt;/em&gt;과(이하 수리/추리) &lt;em&gt;Computational Thinking&lt;/em&gt;의(이하 CT) 두 파트가 있습니다. 이름이 거창하지만 수리/추리는 인적성, CT는 순한 맛 손코딩 알고리즘 문제라고 보면 이해가 빠를 것 같습니다.&lt;/p&gt;
+&lt;h3 id=&quot;수리추리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%88%98%EB%A6%AC%EC%B6%94%EB%A6%AC&quot; aria-label=&quot;수리추리 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;수리/추리&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e9b1492cc3bed2fbd9a7ff9010986430/80e3c/ssafy-review-problem-man.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIBAwQF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB7FeVEkYH/8QAGhABAAIDAQAAAAAAAAAAAAAAAQACAxESFP/aAAgBAQABBQLYTKF6eSuSKzpndif/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwGq/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BiP/EABwQAAIBBQEAAAAAAAAAAAAAAAABERASMUKRsf/aAAgBAQAGPwLXo0/S6Yrk/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARQTEh8P/aAAgBAQABPyHsEMIgJtYi+qDhPkQN7kPAUJ//2gAMAwEAAgADAAAAENT/AP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAIAQMBAT8QMM9X/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAEx/9oACAECAQE/EMIf/8QAGRABAAMBAQAAAAAAAAAAAAAAAQARITFB/9oACAEBAAE/ELTQb57c6QWvM3wzuRByqIGZhHWqOvREIMujhsAtg4Hk/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;문제적 남자&quot;
+        title=&quot;문제적 남자&quot;
+        src=&quot;/static/e9b1492cc3bed2fbd9a7ff9010986430/828fb/ssafy-review-problem-man.jpg&quot;
+        srcset=&quot;/static/e9b1492cc3bed2fbd9a7ff9010986430/ff44c/ssafy-review-problem-man.jpg 158w,
+/static/e9b1492cc3bed2fbd9a7ff9010986430/a6688/ssafy-review-problem-man.jpg 315w,
+/static/e9b1492cc3bed2fbd9a7ff9010986430/828fb/ssafy-review-problem-man.jpg 630w,
+/static/e9b1492cc3bed2fbd9a7ff9010986430/80e3c/ssafy-review-problem-man.jpg 720w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;수리/추리는 &lt;del&gt;평소 문제적 남자의 시청자라면&lt;/del&gt; 누구나 시간을 들여 풀 수 있는 정도의 쉬운 난이도였으나 2분에 한 문제씩 풀어야한다는 점에서 심리적인 부담감이 컸습니다.&lt;/p&gt;
+&lt;h3 id=&quot;ct&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ct&quot; aria-label=&quot;ct permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CT&lt;/h3&gt;
+&lt;p&gt;알고리즘 잡스 채널에 관련 영상이 많으니 참고하는 것을 추천합니다.&lt;/p&gt;
+&lt;h3 id=&quot;교재-인강-사야할까&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B5%90%EC%9E%AC-%EC%9D%B8%EA%B0%95-%EC%82%AC%EC%95%BC%ED%95%A0%EA%B9%8C&quot; aria-label=&quot;교재 인강 사야할까 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;교재, 인강 사야할까?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;정말 정말 비추천합니다.&lt;/strong&gt; 몇몇 지원자 중 시중에 나와있는 SSAFY 대비 교재, GSAT 교재를 구입해 준비를 하는 경우가 있는 것 같은데 하루정도 시간을 내어 여러 블로그와 단톡방에서 공유된 자료로 어떤 유형이 나오는지 파악하는 정도면 충분합니다. 비전공자라면 평소에 백준이나 프로그래머스를 통해 알고리즘 문제를 풀며 문제를 접근하는 과정에 익숙해질 필요가 있습니다.&lt;/p&gt;
+&lt;h3 id=&quot;응시&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%91%EC%8B%9C&quot; aria-label=&quot;응시 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;응시&lt;/h3&gt;
+&lt;p&gt;시험은 아침 9시에 삼성의 온라인 플랫폼에서 진행되었습니다. 그런데 시험을 치던 중 접속 장애가 발생해 당일 오후 3시에 다시 시험을 치는 불상사가 있었습니다.. (개발자 부트캠프에서 서버 접속 장애가 발생하는 아이러니 👀) 개인적으로 CT보다 수리/추리가 시간적인 부분에서 더 까다로웠습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;2차-sw-적성진단-interview&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2%EC%B0%A8-sw-%EC%A0%81%EC%84%B1%EC%A7%84%EB%8B%A8-interview&quot; aria-label=&quot;2차 sw 적성진단 interview permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2차 SW 적성진단, Interview&lt;/h2&gt;
+&lt;p&gt;인터뷰가 오프라인에서 진행되는 걸 안내 문자를 받고 알았습니다. 다행히 교통비가 지원되며 장소는 용인 기흥에 위치한 삼성전자 인재개발원이었습니다. 행정구역은 용인이지만 수원터미널에 더 가깝습니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4dac0e4e52151fccd67fe0c16a26e25c/691cb/ssafy-review-suwon.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 80.37974683544303%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQD/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAaJssGCgp//EABoQAQEAAwEBAAAAAAAAAAAAAAECAAMTERL/2gAIAQEAAQUCAidmwrX7WdKSX5ew5//EABYRAQEBAAAAAAAAAAAAAAAAAAAREv/aAAgBAwEBPwHKP//EABURAQEAAAAAAAAAAAAAAAAAAAAS/9oACAECAQE/AaU//8QAHBAAAgEFAQAAAAAAAAAAAAAAAAERISJBUWGR/9oACAEBAAY/AuIt2ZIlElU/T//EABsQAAMAAgMAAAAAAAAAAAAAAAABESFRMWFx/9oACAEBAAE/IdEB2t1aHSE4bgMWz6Ni1n//2gAMAwEAAgADAAAAECDP/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8QY//EABgRAAIDAAAAAAAAAAAAAAAAAAABESFR/9oACAECAQE/EFYhh//EABwQAQEBAAIDAQAAAAAAAAAAAAERACFRMUFxkf/aAAgBAQABPxACBN6NUMSlDO8P4l8cwoVK8vGjgKJMbX3Sgfm//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;수원 화성&quot;
+        title=&quot;수원 화성&quot;
+        src=&quot;/static/4dac0e4e52151fccd67fe0c16a26e25c/828fb/ssafy-review-suwon.jpg&quot;
+        srcset=&quot;/static/4dac0e4e52151fccd67fe0c16a26e25c/ff44c/ssafy-review-suwon.jpg 158w,
+/static/4dac0e4e52151fccd67fe0c16a26e25c/a6688/ssafy-review-suwon.jpg 315w,
+/static/4dac0e4e52151fccd67fe0c16a26e25c/828fb/ssafy-review-suwon.jpg 630w,
+/static/4dac0e4e52151fccd67fe0c16a26e25c/0ede0/ssafy-review-suwon.jpg 945w,
+/static/4dac0e4e52151fccd67fe0c16a26e25c/3ac88/ssafy-review-suwon.jpg 1260w,
+/static/4dac0e4e52151fccd67fe0c16a26e25c/691cb/ssafy-review-suwon.jpg 1726w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;아침 7시 버스를 타고 10시 쯤 수원터미널에 도착했습니다. 인재개발원에 12시부터 입장할 수 있었기 때문에 주변 카페에서 인터뷰 준비를 하며 기다릴 생각으로 택시를 탔습니다. 경상도에서 왔다고 하자 정치 얘기를 꺼내는 기사님과 함께 15분 정도를 달려 인재개발원에 도착했습니다.&lt;/p&gt;
+&lt;h3 id=&quot;복장&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B3%B5%EC%9E%A5&quot; aria-label=&quot;복장 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;복장&lt;/h3&gt;
+&lt;p&gt;복장에 대해 많이들 궁금해하시는데 자유복장이었기 때문에 청바지에 맨투맨을 입었습니다. 그런데 어째서인지 다들 정장을 입고 있었습니다.&lt;/p&gt;
+&lt;h3 id=&quot;준비&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A4%80%EB%B9%84&quot; aria-label=&quot;준비 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;준비&lt;/h3&gt;
+&lt;p&gt;입장 가능 시간까지 카페에서 유튜브로 PT 면접 팁 영상을 시청했지만 면접 때 도움이 되진 않았습니다. &lt;strong&gt;1분 자기 소개와 마지막 하고 싶은 말은 꼭 준비하세요.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2차-적성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2%EC%B0%A8-%EC%A0%81%EC%84%B1&quot; aria-label=&quot;2차 적성 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2차 적성&lt;/h3&gt;
+&lt;p&gt;쉽습니다.&lt;/p&gt;
+&lt;h3 id=&quot;5분-pt-면접&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5%EB%B6%84-pt-%EB%A9%B4%EC%A0%91&quot; aria-label=&quot;5분 pt 면접 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5분 PT 면접&lt;/h3&gt;
+&lt;p&gt;모니터 너머로 비대면으로 진행되었습니다. 운좋게도 학부 때 프로젝트와 관련있는 주제가 나와 프로젝트 경험을 토대로 하고 싶은 말을 했습니다.&lt;/p&gt;
+&lt;h3 id=&quot;일반-면접&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%BC%EB%B0%98-%EB%A9%B4%EC%A0%91&quot; aria-label=&quot;일반 면접 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;일반 면접&lt;/h3&gt;
+&lt;p&gt;일반 면접은 면접 경험이 없는 저로서는 많이 긴장되었습니다. 보안 서약서를 작성해 내용을 밝힐 수는 없지만 솔직하게, 논리적으로 본인의 생각을 말할 수 있다면 충분할 것 같습니다. 생각이 나지 않을 때는 잠시 시간을 들여 생각을 정리한 후 답변하세요.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;합격과-입과-포기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%A9%EA%B2%A9%EA%B3%BC-%EC%9E%85%EA%B3%BC-%ED%8F%AC%EA%B8%B0&quot; aria-label=&quot;합격과 입과 포기 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;합격과 입과 포기&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a6604a479e3928bb8f7650ea58b4754b/ecf19/ssafy-review-result.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 113.29113924050634%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAABYlAAAWJQFJUiTwAAADcElEQVQ4y41U7U4bRxTlLy9Q5R0q9SEqJWqEVEEghNLy0cdo8i+VkvzJj6iiUlqpSkSlVlWLAnGgfAVogNBiCJgvL3jttXf9ubveXbxer3cNJ3cG1titQxnpaO7M3Dlz7z0z02aWXQQw7Aospwq7WuMoeyf1vtEuuT4H82V7Gjna/k2mmiUI8ST2DkVE9gVERYnbu0IM0VgC2zQnptI4kmSkC/p/SJsIjyselLyGVzPzHKHpOcwuvsGf84uYnH2NheW3GJ+cxuLKGjYie0hm8nxPS8KAlKW1Ez3CFBEsr61z0rXwJmZfL2LhzSrm6IDfx0MIb+/C8U9RLDmtU2Zgi5pVItjIFy3kdBMZ1UAso0OQVWRpLOdUPp/VDO73QULDduDUwJtH8HHRiieAXkPL5tJaI2lbEBlbmKFa3ezowC+//YGfno+iu6cHg8NfY3h4iGNgaAhfDQ5yDAwO0fptjE2E4J4S6XG5mbBChLMLS+jsuoVnP/+KJyNP8XlnF3r7+tHd24eunjvovHWb7Dvo/aKfSIfR1/8lXoQmm6JsUpndMZ6i7UIpGDAcD1rJRc6gWpU9OLRsUTim49fLw4S5VGVW6MDOG8dcHJ3SkZQsxkOvsLTyti7GpaJw2GdEDFJGxXY0ThART6sYezmF9vZ23PjsJuJKvu7XtL9VhOzmi3IO7/ZjEBIKDqU0otQfiDLWIwfYEeJ8nMyqlz+9AIETg07psJSsMr0ix4Xterw37Ys55t9EGJzA6pTKaojJWcRSWYhKDol0AXtHEg7kIiLpCiKKjXCyTLbDsZU0eRaNdW9SmZGm6WVsUd3COwL2xRQiQgLvohJ2E3nsETYEBRvRFB/LWgkFo0RZfEBlyznrM5rJiZlznpClsWpY0OgnUs+VZ715XvNA0JaiNNaRbWTpBD8K+9rYG87pRt33UlEa66kUivh7M4LDhMwvelqzqJ4JrK5vIry1S4eZV1O5/jeSin7N4/C8KqpVl/cnJz5cz4fBff/nHtb/xIqLLdnG939p+HFFx9NlHT8QmD2ypGFVPEaZfIr2FQh1Usz3qxj9p4hr90R8/EDCp9/JuD6i4JNHEj66K+LxvIYa+eilKxCyUx3X5VHcncjj/lQBD6ZVPJxR8S3Z39DczL7Ffa4UYWPaLFKPUPXOwGw2V3bdlu+Y4T1SJo+u0pBwfgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;합격&quot;
+        title=&quot;합격&quot;
+        src=&quot;/static/a6604a479e3928bb8f7650ea58b4754b/f058b/ssafy-review-result.png&quot;
+        srcset=&quot;/static/a6604a479e3928bb8f7650ea58b4754b/c26ae/ssafy-review-result.png 158w,
+/static/a6604a479e3928bb8f7650ea58b4754b/6bdcf/ssafy-review-result.png 315w,
+/static/a6604a479e3928bb8f7650ea58b4754b/f058b/ssafy-review-result.png 630w,
+/static/a6604a479e3928bb8f7650ea58b4754b/40601/ssafy-review-result.png 945w,
+/static/a6604a479e3928bb8f7650ea58b4754b/ecf19/ssafy-review-result.png 948w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;12월 20일 오후 3시 7분에 합격 결과를 받았습니다.&lt;/p&gt;
+&lt;p&gt;그리고 며칠 뒤 &lt;em&gt;우아한테크코스&lt;/em&gt;라는 부트캠프에 합격하게 되어 입과를 취소하게 되었습니다. SSAFY 단톡방에서 은행권 취업률 등으로 얘기가 나오는 것을 보며 우아한테크코스에 비해 SSAFY의 커리큘럼과, 함께 교육을 받게 될 교육생들의 관심사가 제가 관심있는 도메인과는 거리가 멀다는 생각이 들었습니다. 아마 자사 서비스 기업, 혹은 프론트엔드를 희망하는 분들은 공감하실만한 부분이라고 생각합니다.&lt;/p&gt;
+&lt;h2 id=&quot;끝으로&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%81%9D%EC%9C%BC%EB%A1%9C&quot; aria-label=&quot;끝으로 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;끝으로&lt;/h2&gt;
+&lt;p&gt;SSAFY는 7기 기준 100만원의 지원금 (서울 외 지역은 +α), 개인별 취업 지원 등 취준생에게 매우 매력적인 교육과정이라고 생각합니다. 이 글을 읽는 SSAFY 지원자분들이 꼭 합격하시기를 함께 응원합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[바닐라 JS로 MVC To-Do List 구현하기]]></title><description><![CDATA[구조 Model–view–controller (MVC) is a software design pattern commonly used for developing user interfaces that divide the related program…]]></description><link>https://woojeongmin.com/2021/vanilla-js-mvc-todolist/</link><guid isPermaLink="false">https://woojeongmin.com/2021/vanilla-js-mvc-todolist/</guid><pubDate>Thu, 23 Dec 2021 08:33:26 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
