@@ -10,7 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
-    query BioQuery { 
+    query BioQuery {
       site {
         siteMetadata {
           author {
@@ -38,19 +38,25 @@ const Bio = () => {
         <div>
           {author?.summary || null} <strong>{author.name}</strong>입니다.
           <div className="bio-social-link">
-            <a href={`https://github.com/${social?.github || ``}`}>
+            <a
+              className="link-highlighter"
+              href={`https://github.com/${social?.github || ``}`}
+            >
               <img src="/social_logo/GitHub-Mark-32px.png" alt="github" />
             </a>
             ·
-            <a href={`https://instagram.com/${social?.instagram || ``}`}>
+            {/* <a href={`https://instagram.com/${social?.instagram || ``}`}>
               <img src="/social_logo/Instagram_Glyph_Gradient_RGB.png" alt="instagram" />
             </a>
             ·
             <a href={`https://soundcloud.com/${social?.soundcloud || ``}`}>
               <img src="/social_logo/soundcloud_orange_transparent_32.png" alt="soundcloud" />
             </a>
-            ·
-            <a href={`https://www.notion.so/78f84d8375a547e69b5a7e7c2ed3bc93`}>
+            · */}
+            <a
+              className="link-highlighter"
+              href={`https://subsequent-motorcycle-de8.notion.site/78f84d8375a547e69b5a7e7c2ed3bc93`}
+            >
               portfolio
             </a>
           </div>

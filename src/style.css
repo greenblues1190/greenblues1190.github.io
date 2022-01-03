@@ -27,8 +27,8 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: "Noto Sans KR", "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif,
+  --fontFamily-sans: "Noto Sans KR", "Helvetica Neue", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
@@ -261,7 +261,6 @@ a:focus {
   font-family: "Noto Sans";
   font-size: var(--fontSize-5);
   margin: 0;
-
 }
 
 .heading-link {
@@ -407,8 +406,7 @@ a:focus {
   text-overflow: ellipsis;
 }
 
-.toc p{
-
+.toc p {
   margin: 0px;
   margin-bottom: 0.1rem;
   white-space: nowrap;
@@ -432,7 +430,7 @@ a:focus {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--spacing-1);
-  color: #B3B3B3;
+  color: #b3b3b3;
   font-weight: var(--fontWeight-normal);
 }
 
@@ -441,22 +439,30 @@ a:focus {
   height: 1rem;
 }
 
+.link-highlighter {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.link-highlighter:hover {
+  background-color: #e9ddc5;
+}
+
 /**
  * gatsby-remark-code-titles
  */
- .gatsby-code-title {
+.gatsby-code-title {
   position: relative;
   /* width: auto; */
   margin-bottom: -0.3rem;
   padding: 0.2em 1em;
-  font-family: 'Menlo', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-    'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
-    monospace;
+  font-family: "Menlo", Consolas, "Andale Mono WT", "Andale Mono",
+    "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco,
+    "Courier New", Courier, monospace;
   font-size: var(--fontSize-0);
 
   /* background-color: #d1dce5; */
-  background: linear-gradient(#EAEAEA, #d5d5d5);
+  background: linear-gradient(#eaeaea, #d5d5d5);
   color: black;
   z-index: 100;
 
@@ -468,10 +474,10 @@ a:focus {
  * Add back the container background-color, border-radius, padding, margin
  * and overflow that we removed from <pre>.
  */
- .gatsby-highlight {
+.gatsby-highlight {
   margin-bottom: var(--spacing-8);
   /* background-color: #1D1F21; */
-  background-color: #0C0C0C;
+  background-color: #0c0c0c;
   border-radius: 0.3em;
   /* margin: 0.5em 0; */
   padding: 1em;
