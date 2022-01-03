@@ -10,7 +10,7 @@ module.exports = {
     siteUrl: `https://woojeongmin.com/`,
     social: {
       github: `greenblues1190`,
-      instagram: `woo.jeongmin`,
+      instagram: `woo_jeongmin`,
       soundcloud: `srrlmnth`,
       twitter: `greenblues1190`,
     },
@@ -158,7 +158,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `woojeongmin`,
+        shortname: `jeongminwoo`,
       },
     },
     `gatsby-plugin-sitemap`,
@@ -170,15 +170,17 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://woojeongmin.com/',
-        sitemap: 'https://woojeongmin.com/sitemap/sitemap-index.xml',
-        policy: [{
-          userAgent: '*',
-          allow: '/'
-        }]
-      }
+        host: "https://woojeongmin.com/",
+        sitemap: "https://woojeongmin.com/sitemap/sitemap-index.xml",
+        policy: [
+          {
+            userAgent: "*",
+            allow: "/",
+          },
+        ],
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
