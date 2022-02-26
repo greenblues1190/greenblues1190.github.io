@@ -1,4 +1,208 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[woo jeongmin]]></title><description><![CDATA[웹 개발, 미디어 아트를 하고 있는 우정민입니다.]]></description><link>https://woojeongmin.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 17 Jan 2022 07:54:03 GMT</lastBuildDate><item><title><![CDATA[SSAFY 7기 선발 과정과 전공자 합격 후기]]></title><description><![CDATA[🗣 앞으로 SSAFY를 지원할 예비 지원자분들을 위해 이 글을 작성합니다. SSAFY의 선발 과정과 제가 어떻게 준비했는지 공유합니다. 선발 대상 만 29세 이하 국내외…]]></description><link>https://woojeongmin.com/2022/ssafy-review/</link><guid isPermaLink="false">https://woojeongmin.com/2022/ssafy-review/</guid><pubDate>Sun, 02 Jan 2022 13:43:16 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[woo jeongmin]]></title><description><![CDATA[웹 개발, 미디어 아트를 하고 있는 우정민입니다.]]></description><link>https://woojeongmin.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 26 Feb 2022 22:36:00 GMT</lastBuildDate><item><title><![CDATA[재사용 가능한 모듈 만들기]]></title><description><![CDATA[그동안 수없이 들었던 “UI와 도메인을 분리시켜주세요”라는 피드백.. 분리에 분리를 반복하면서 어느 순간 공통되는 부분들이 보이기 시작했다. 이런 부분들을 모으면 다른 미션에서도 사용할 수 있을 거라는 생각이 들었다. 도메인 의존성 파악하기  MVC…]]></description><link>https://woojeongmin.com/2021/study-log/reusable-module/</link><guid isPermaLink="false">https://woojeongmin.com/2021/study-log/reusable-module/</guid><pubDate>Sat, 26 Feb 2022 21:40:40 GMT</pubDate><content:encoded>&lt;p&gt;그동안 수없이 들었던 “UI와 도메인을 분리시켜주세요”라는 피드백.. 분리에 분리를 반복하면서 어느 순간 공통되는 부분들이 보이기 시작했다. 이런 부분들을 모으면 다른 미션에서도 사용할 수 있을 거라는 생각이 들었다.&lt;/p&gt;
+&lt;h2 id=&quot;도메인-의존성-파악하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8F%84%EB%A9%94%EC%9D%B8-%EC%9D%98%EC%A1%B4%EC%84%B1-%ED%8C%8C%EC%95%85%ED%95%98%EA%B8%B0&quot; aria-label=&quot;도메인 의존성 파악하기 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;도메인 의존성 파악하기&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 591px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/09833a8382e1e5a26d88e43611545b76/e4c9a/javascript-lotto-prev.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.25316455696203%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVQ4y32T2a7CMAxE8/+fhcQjTyBRQCxd2CnQsnRhMTqWHEFvdS1ZaRNnMjNO3Pv9lrYkNpuNZhRFslwuJc9zORwOfr1tn2su2jex3W4lSRIpikKez6fm5XLx6819hGtOfH/DbL/fKyBA5Pl89jWv1+sPsLvf71JVlazXazmdTsL/7XbTIsbr9Srz+Vwmk4lKJgkOKctSsiyT3W6ntaQbj8cqDY/SNNXC1WqlQIwUwxIvAQCQMQxDXaPOVJBuOp3qKfhDIQzNpziOtQnfsgCkhnnWLZBPKiAAFAJKsIGAIfNYghwYYAtxPB6VJQyZZw+pkvEH+hbmIYB0GQUWdhjAQRD8KNAuw3A2m2lHaQyyOZEAbDQaCTV8Px4PvwYgRFD302UmAeQ6UGzyjCEKzHQOMwAA6T4+0jC7Sg45ADCJH+YVYU1irOtaRw40wMVioT5Cxlg6u0NIxg8A7K79F9T2+30ZDAa+UQqIJMCMBQyavrS9c2wAjOT++qZ0Oh3pdrvS6/UUGF+Q33yGzaeJzOFwqB7zKMyaD4tBNLBf9FJMAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;javascript-lotto-prev.png&quot;
+        title=&quot;javascript-lotto-prev.png&quot;
+        src=&quot;/static/09833a8382e1e5a26d88e43611545b76/e4c9a/javascript-lotto-prev.png&quot;
+        srcset=&quot;/static/09833a8382e1e5a26d88e43611545b76/c26ae/javascript-lotto-prev.png 158w,
+/static/09833a8382e1e5a26d88e43611545b76/6bdcf/javascript-lotto-prev.png 315w,
+/static/09833a8382e1e5a26d88e43611545b76/e4c9a/javascript-lotto-prev.png 591w&quot;
+        sizes=&quot;(max-width: 591px) 100vw, 591px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;MVC 패턴으로 설계된 로또 앱의 구조이다. 여기에서 로또 앱 도메인과 관련된 부분만 형광표시하면 다음과 같다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 591px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0da2b0801c91013192e3d68bbf7f612c/e4c9a/javascript-lotto-prev-highlight.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.25316455696203%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVElEQVQ4y21TaW/TQBD1//8T+cAhgfjQAlWRkEoLlDYqiJKQ1rnqOD7qxLfX9/XY2SQmqTrS0652Zt6+mdmV2rbFcyCzLEtguVzCMAxEUQTHcTr/c3nSU+duT7ZaraDrOrIsQ13XAoyxzv80j0wQNk2zF/B/T8ps2xaEREQIgqAjOMzbKkzTAkVZw1rZCEKGLK+QpJkISpIEcRxDURRMp1NRMoGMLsnzHGEYYr1ei1iCZDxcwbcGcPSfiJ0R2mQGdzXjRClM0xDBpJJ6SQRESKuqqsJHF+6qIEjKuA9/PUGV8F6FC8TeDEm0QrstmYawXxYRpmkqzjVN63xUPkEQhs5coEoMtLmJPNmQkEIiKIpClJNlKXzfFz7P84RKUkjK6BKCpA7fQL55CWtyjNb/hsY9Qx3PRNKjaULfPpedUTIZEcuyfFCBmLJ2d4TJ73dQhkcwxidIHr+gTRfCqWkq5PsRH8iYl7/gSklJ0hHSoBiLutchpmyOP2Lx9z2YeYHSvUbtXaJJVRHkGreYDU/h6dco/T+ogluU0bQjVBSVX2rw92pj9xKlNA5QZAyOzXuX8n7lDGWxKaupElRFiKZk4H1AW/FHXW0VejaU+R0WDzJ81+TBmYiXAldHkXowtQloX2YeEubjqbXdpDdr5D5gcPUaw/5beNo5P/iFJriBpN9/gC6fovL7qPlB7V2hihcHfTnE5ndEzhSDyx4GP15gPT9BG/BW+ZeQvn/u4eJTD/3zV1BGp5jeHsMx7/b+dHuodCsxYxbmozMo8lesl1wIG/NPMcE/yrkpJI3iFL4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;javascript-lotto-prev-highlight.png&quot;
+        title=&quot;javascript-lotto-prev-highlight.png&quot;
+        src=&quot;/static/0da2b0801c91013192e3d68bbf7f612c/e4c9a/javascript-lotto-prev-highlight.png&quot;
+        srcset=&quot;/static/0da2b0801c91013192e3d68bbf7f612c/c26ae/javascript-lotto-prev-highlight.png 158w,
+/static/0da2b0801c91013192e3d68bbf7f612c/6bdcf/javascript-lotto-prev-highlight.png 315w,
+/static/0da2b0801c91013192e3d68bbf7f612c/e4c9a/javascript-lotto-prev-highlight.png 591w&quot;
+        sizes=&quot;(max-width: 591px) 100vw, 591px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Model, Controller, View에 로또 리스트, 로또 구매 등 도메인 관련 변수, 메소드들이 혼재되어 있다. 다르게 말하면 형광 표시되어있지 않은 부분이 도메인과 관계없는 각 모듈의 기본 역할이라고 볼 수 있다. 이러한 공통되는 부분들만 모으고 상속받는다면 도메인에 관련된 역할만 수행하는 자식 클래스들을 구현할 수 있을 것이다.&lt;/p&gt;
+&lt;h2 id=&quot;도메인-계층-분리하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8F%84%EB%A9%94%EC%9D%B8-%EA%B3%84%EC%B8%B5-%EB%B6%84%EB%A6%AC%ED%95%98%EA%B8%B0&quot; aria-label=&quot;도메인 계층 분리하기 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;도메인 계층 분리하기&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 591px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c97479d4515070e8e8f8210f841c191c/e4c9a/javascript-lotto-after.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 82.91139240506328%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAACsElEQVQ4y31UW0/bUAzO//8VbG9DYkOgvewBDQYtm8TKaOklbdYmzT1tkzaXk0uTb8dmrQobWLJy4mN/tj87UfBCmqbZPx3Hge/7mM1mMAwD6/Wa3+u6fuZ7KAoZX1PXdTGfz5GmKaqqwna7RRzHzwBfqoI3hCpbLpfI8xxZljFwGIZ7wP+JIoRg59VqxU96T5KEs202G1aqcjqd8pnaJiHfXaIoivaxCgGRQVVVroYCbNvmajzP40TEHwHugsuyZJ8gCDg5JaRkFKNokwkf4lga5GUsL7IsZb4IhIIOhXwJhBJPZCxxe8inkiSSmyyXA/CRpIK1KJ+cTNPkzNQagVBL1AWBkF3TNOaU7JSIOlDSjYelr2PUv4NrjlHlKwSeJYlvuC1quSiKfYUURELTpgppjZ5VqD2cYjG7QB60IUj9a+TxHGVVc8vdbhfj8RiLxYIrI8DdwIj3HSW7nVTUzieonVPo/c8MmEnAIjZRbRsEviepcLhSXdeZ5ySJOZA4JEDLshh8B6rYo3NMu6fI3EvUYVvqDWphSR63yItK8ltCNyxMZ3OsNxniRHAw8UaJXPk10ZSFoD1NoBiPJ5h0jqH3PsIanqHwL9DklgTbwpzJdvstDB+u8Ht4C0e/h28PuZK8KCUFDQ9xpGpYhXI7RAlFH17AGF1CLH+hjHry2UGZPRG99nqwtW8Qqy5QTNAkfdSp9nQXBZiqdxgPfsikbXjmI5buSK5NVnBbhulik+SsIi//+aSaAyXJYxvd1hEeWu/hqOeoFldAdCPXJjJQJDYcoyedLGyFC5GGf0muD7TZn5nDjY376yP8vHqH+eBMct9CE7WhDO9OeMLl8juKxS2vTZlYr/6edraqiBF6AwQWtTqQg5yzKr/ax7i7/oBR5wz+9Cuc8RfEof4q4Ft2kj/PrA1G7L1tVAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;javascript-lotto-after.png&quot;
+        title=&quot;javascript-lotto-after.png&quot;
+        src=&quot;/static/c97479d4515070e8e8f8210f841c191c/e4c9a/javascript-lotto-after.png&quot;
+        srcset=&quot;/static/c97479d4515070e8e8f8210f841c191c/c26ae/javascript-lotto-after.png 158w,
+/static/c97479d4515070e8e8f8210f841c191c/6bdcf/javascript-lotto-after.png 315w,
+/static/c97479d4515070e8e8f8210f841c191c/e4c9a/javascript-lotto-after.png 591w&quot;
+        sizes=&quot;(max-width: 591px) 100vw, 591px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;도메인 관련 변수, 메소드들을 &lt;code class=&quot;language-text&quot;&gt;LottoModel&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;AppController&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;AppView&lt;/code&gt;라는 자식 클래스로 분리시킨 상태이다. 상속으로 인해 레이어가 생성되었다. 공통적으로 수행되는 부분이지만 도메인 의존성이 있는 메소드들은 부모 클래스에 선언하고 자식 클래스에서 오버라이드해 구현하도록 한다.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;예) Controller의 이벤트 바인딩&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Controller&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;bindEventHandlers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;AppController&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Controller&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;bindEventHandlers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;view&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;bindOnClickPaymentSubmit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;purchase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;view&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;bindOnClickNumberToggle&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;추가로 더 추상화를 해보자. 어떤 Model이든 상태를 다룬다는 걸 떠올려 Model에서 상태관리에 대한 부분을 구현했다. Model에 &lt;code class=&quot;language-text&quot;&gt;state&lt;/code&gt;라는 멤버 변수와 이를 관리하는 메소드들을 정의했다. 예를 들어 초기상태를 지정하는 &lt;code class=&quot;language-text&quot;&gt;setInitState()&lt;/code&gt; 메소드는 항상 자식 클래스에서 오버라이드하도록 하기 위해 에러를 throw하도록 했다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Model&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;setInitState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;override&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;LottoModel&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Model&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;setInitState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      lottoList&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;결과&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B2%B0%EA%B3%BC&quot; aria-label=&quot;결과 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;결과&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 591px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0e351c6a5b738750b103575ddf121136/e4c9a/javascript-lotto-final.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADIElEQVQ4y4VU207bQBD1//9DH/rQp0pQoUIpaosKhUAFKYQkOCaxHduJnfgS2+s7dk53NgpNEYGRRl7v7pw5e2Z2JTyz5XL5NJ7NZnBdF7quwzAMhGGI+Xz+tGdz79okmnzJySiYgJIkwePjI+q6BmMM22LIJZFpk+HGmMA8z0NZlsiyDGmaCpavMiyLHFWZYxH4SJMY9F/kmVgkNnEcwzRNaJomxuRkBF4UhWC/WCxEQnJJ1mw4iwL90RRjO4LHGpi2xwMSoSExnEwmgi0FRFEkGFuWhSAIRILpdCoSkEuXt0OMJhEMN4fuJBhOYsyCBMumwXg8FjpuGrEmYN/3oarqf8cXGvYGKhw3hB9lYHmDOKsRsdWRiRkxIEZ0NAIiVg1PRl8CpPU8z/8d+bA1wv7pPVp9Dx2jRFvLYfmVALRtWzCkgLVREBnppiiKAN4skERgh2cyelaF/qTCnVliGpRiUdfH6HQ6kGVZsCWmpNMm4LpIT4CGE2Iy55Wc8YLEFeZRhbRoxGLEW2SxCODx5ra58EnCRLHIAg6oqhoviM3nV0lICqnME5Arcg+moaKuuE6+Kxo5zQqEUYqBouJ+MIIXxOKfbOpGOP4t4/RKwem1AtmMobs1JL1/hJl+hsxrI3GvUQZ/kIU6yqrBVLvC4OYAY/kHXKMF32xh4dwJwLKqEXBwcms6R5yWYFkFaXS7g1FnD6Z8AGb/QuqcoIhUEVQkDkL3AVVqATVvn9IGHn2xRlXP84IXzkG32+PSRFzPhGvY24HS/ghfP+KiXWIZnqHJNDy/VMsNJws9A8Pudwx7x5gbl4hnN8IlR9mDfrfLfQfW/R4y+xuQ66vgZbPh6wdgVTAWjND++Q53Fx8wH33hZFpAfMk17O1j2NkHc1qogmvk7gVKNt56+deAsT9E5+w9bs8J8JCf7AJ1cA4pjploXOozekkYS54a+WXA1VxTl7w7IuRpiCLjL1Cdced3OQp4w2YBbOsBLLSxrFabtgG+Ni8aW+3uQ+t9ReHz43pXSGct5JH+JsOtD+y4u8vb5hMs+TMqv4XCPUHF1DeZbLO/AgH0zvGZu0UAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;javascript-lotto-final.png&quot;
+        title=&quot;javascript-lotto-final.png&quot;
+        src=&quot;/static/0e351c6a5b738750b103575ddf121136/e4c9a/javascript-lotto-final.png&quot;
+        srcset=&quot;/static/0e351c6a5b738750b103575ddf121136/c26ae/javascript-lotto-final.png 158w,
+/static/0e351c6a5b738750b103575ddf121136/6bdcf/javascript-lotto-final.png 315w,
+/static/0e351c6a5b738750b103575ddf121136/e4c9a/javascript-lotto-final.png 591w&quot;
+        sizes=&quot;(max-width: 591px) 100vw, 591px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;각 모듈이 보다 안정적이고 재사용 가능해졌다.&lt;/li&gt;
+&lt;li&gt;객체지향 원칙이 좋은 구조에 도움이 되는 이유를 체감했다.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[innerHTML, insertAdjacentHTML과 XSS 공격]]></title><description><![CDATA[코드 리뷰에서 innerHTML의 보안 취약점에 대해 피드백을 받고 찾아본 내용이다. XSS란? XSS(Cross-site scripting…]]></description><link>https://woojeongmin.com/2021/study-log/innerhtml-insertadjacenthtml-xss/</link><guid isPermaLink="false">https://woojeongmin.com/2021/study-log/innerhtml-insertadjacenthtml-xss/</guid><pubDate>Thu, 17 Feb 2022 19:02:30 GMT</pubDate><content:encoded>&lt;p&gt;코드 리뷰에서 innerHTML의 보안 취약점에 대해 피드백을 받고 찾아본 내용이다.&lt;/p&gt;
+&lt;h2 id=&quot;xss란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#xss%EB%9E%80&quot; aria-label=&quot;xss란 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;XSS란?&lt;/h2&gt;
+&lt;p&gt;XSS(Cross-site scripting)는 공격자가 클라이언트 측에서 웹 사이트에 악성 코드를 삽입하는 공격 기법을 의미한다. 개발자가 본인의 마크업을 사이트에 삽입하는 경우엔 사실 걱정할 필요가 거의 없다. 위험은 사용자의 입력 혹은 제 3자가 출처인 컨텐츠를 화면에 출력할 때 발생한다. 이 경우 &lt;code class=&quot;language-text&quot;&gt;innerHTML&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;insertAdjacentHTML&lt;/code&gt;이 문제가 된다.&lt;/p&gt;
+&lt;h2 id=&quot;innerhtml-insertadjacenthtml의-보안-취약점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#innerhtml-insertadjacenthtml%EC%9D%98-%EB%B3%B4%EC%95%88-%EC%B7%A8%EC%95%BD%EC%A0%90&quot; aria-label=&quot;innerhtml insertadjacenthtml의 보안 취약점 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code class=&quot;language-text&quot;&gt;innerHTML&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;insertAdjacentHTML&lt;/code&gt;의 보안 취약점&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-html line-numbers&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;innerhtml-input&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;innerhtml-input-btn&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;innerHTML submit&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;insertadjacenthtml-input&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;insertadjacenthtml-input-btn&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;insertAdjacent submit&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;submitted-input&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;span class=&quot;token language-javascript&quot;&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// innerHTML로 텍스트 삽입&lt;/span&gt;
+    document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;#innerhtml-input-btn&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;click&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; userInput &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;#innerhtml-input&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value
+      document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;.submitted-input&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;innerHTML &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; userInput
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;// insertAdjacentHTML로 텍스트 삽입&lt;/span&gt;
+    document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;#insertadjacenthtml-input-btn&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;click&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; userInput &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;#insertadjacenthtml-input&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value
+      document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;.submitted-input&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;insertAdjacentHTML&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;beforeend&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; userInput&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;innerHTML&lt;/code&gt;은 특정 HTML 요소의 마크업을 갈아 끼울 수 있어 편리하다. 하지만 그만큼 XSS에 대해 취약하다. 위의 &lt;a href=&quot;https://codepen.io/woojeongmin/pen/gOXxyEO&quot;&gt;코드&lt;/a&gt;에 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;img src onerror=&amp;quot;alert(&amp;#39;evil&amp;#39;)&amp;quot;&amp;gt;&lt;/code&gt;을 입력하고 제출 버튼을 클릭해보자. 웹사이트가 사용자의 입력에 포함된 &lt;code class=&quot;language-text&quot;&gt;alert(&amp;#39;evil&amp;#39;)&lt;/code&gt;을 실행하는 것을 알 수 있다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;insertAdjacentHTML()&lt;/code&gt;&lt;/strong&gt; 메서드는 HTML or XML 같은 특정 텍스트를 파싱하고, 특정 위치에 DOM tree 안에 원하는 node들을 추가 한다.  이미 사용중인 elemet 는 다시 파싱하지 않는다. 그러므로 element 안에 존재하는 element를 건드리지 않는다. (innerHtml은 과 좀 다름). innerHtml보다 작업이 덜 드므로 빠르다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;insertAdjacentHTML&lt;/code&gt;은 innerHTML에 비해 성능상의 이점이 있어 자주 쓰이지만 마찬가지로 텍스트의 마크업을 파싱해 DOM에 노드들을 추가하므로 XSS에 취약하다.&lt;/p&gt;
+&lt;h2 id=&quot;xss-공격을-방지하기-위해선&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#xss-%EA%B3%B5%EA%B2%A9%EC%9D%84-%EB%B0%A9%EC%A7%80%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%B4%EC%84%A0&quot; aria-label=&quot;xss 공격을 방지하기 위해선 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;XSS 공격을 방지하기 위해선&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;사용자 혹은 제 3자의 텍스트에는 &lt;code class=&quot;language-text&quot;&gt;textContent&lt;/code&gt; 사용&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;텍스트 내용을 설정하기 위해서는 &lt;code class=&quot;language-text&quot;&gt;textContent&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;innerText&lt;/code&gt;를 사용하는 것이 좋다. &lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/API/Node/textContent#innertext%EC%99%80%EC%9D%98_%EC%B0%A8%EC%9D%B4%EC%A0%90&quot;&gt;textContent와 innerText의 차이점&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DOM에 삽입 전 sanitizing&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/cure53/DOMPurify&quot;&gt;DOMPurify&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;백엔드에서 XSS 필터링&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;직접 요소 생성, 조작&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;createElement&lt;/code&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#&quot; aria-label=&quot; permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;현실적으로 &lt;code class=&quot;language-text&quot;&gt;innerHTML&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;insertAdjacentHTML&lt;/code&gt;을 안 쓸 수는 없다고 생각한다. 사용자 혹은 제 3자가 출처인 컨텐츠는 &lt;code class=&quot;language-text&quot;&gt;textContent&lt;/code&gt;로 출력하고 DOM 조작 시 클라이언트에서 인코딩 후 서버단에서 필터링을 거치는 것이 좋아보인다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SSAFY 7기 선발 과정과 전공자 합격 후기]]></title><description><![CDATA[🗣 앞으로 SSAFY를 지원할 예비 지원자분들을 위해 이 글을 작성합니다. SSAFY의 선발 과정과 제가 어떻게 준비했는지 공유합니다. 선발 대상 만 29세 이하 국내외…]]></description><link>https://woojeongmin.com/2022/ssafy-review/</link><guid isPermaLink="false">https://woojeongmin.com/2022/ssafy-review/</guid><pubDate>Sun, 02 Jan 2022 13:43:16 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;🗣 앞으로 SSAFY를 지원할 예비 지원자분들을 위해 이 글을 작성합니다. SSAFY의 선발 과정과 제가 어떻게 준비했는지 공유합니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
@@ -341,127 +545,6 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://woojeongmin.com/vanilla-js-mvc-todolist/&quot;&gt;데모 링크&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/greenblues1190/vanilla-js-mvc-todolist&quot;&gt;전체 코드&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[토이 프로젝트: 인터렉티브 웹 사이트]]></title><description><![CDATA[Patatap과 인터렉티브 웹 2014년에 만들어진 Patatap이라는 사이트가 있다. 사용자가 입력한 키에 반응하여 소리와 애니메이션을 보여주는 인터렉티브 웹사이트이다. 내가 자바스크립트와 html…]]></description><link>https://woojeongmin.com/2021/interactive-web-app/</link><guid isPermaLink="false">https://woojeongmin.com/2021/interactive-web-app/</guid><pubDate>Wed, 10 Nov 2021 14:31:15 GMT</pubDate><content:encoded>&lt;h2 id=&quot;patatap과-인터렉티브-웹&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#patatap%EA%B3%BC-%EC%9D%B8%ED%84%B0%EB%A0%89%ED%8B%B0%EB%B8%8C-%EC%9B%B9&quot; aria-label=&quot;patatap과 인터렉티브 웹 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Patatap과 인터렉티브 웹&lt;/h2&gt;
-&lt;p&gt;2014년에 만들어진 &lt;a href=&quot;https://www.patatap.com/&quot;&gt;Patatap&lt;/a&gt;이라는 사이트가 있다. 사용자가 입력한 키에 반응하여 소리와 애니메이션을 보여주는 인터렉티브 웹사이트이다. 내가 자바스크립트와 html을 공부하기 시작했던 계기이기도 하다. 아래는 내가 Patatap에 영감을 받아 만든 인터렉티브 웹사이트들이다.&lt;/p&gt;
-&lt;h3 id=&quot;void-and-particles&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#void-and-particles&quot; aria-label=&quot;void and particles permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Void and Particles&lt;/h3&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/00b91ca78f7fedd27174dc55cc2f885e/d9ed5/interactive-web-app-1.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62.65822784810127%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABYklEQVQ4y61Sy0rDQBTNtyi4saJYSyt14af4US5d6icILbhQcaP1AZqmnRhFFPtuYhuxTeZxnDzpI6YUvHCYy7l3zj13EqW4t4+dXAH5QhGZjS2sZzaxsrq2FLx729k8srldKLVaHZpWQ71OQAjxz2pVWwqE6DCMF+j6MxT8cyicc0yCMQYq4eVeiJDjIS8Zn+N/YMqhECLOuWA4NO7x5Y6nHBw/9DEcs7n+2GFUYCJwdNK4wNHHGRgF1EEHY+oClgk2GuKq30ClaSEwL9IFeSh4bqootW/g2J3AhcSneotRv4WDuzKqg1a4gUh0ObVyJCozCRc/3R6s8imeWq9omjp6koveVaQJeqRfkIKelGOroINHMKsL1yB+I4UN+7IE9/0t8c3nHAaCnnDg0m1eg7YrgV/q+OdIk4N6XXDnG2zYWbxy0mQx8fvEnPxQIhySKhivnpDPvt3ClWebEgVTalH8AhwEwxvdIy1eAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Void and Particles&quot;
-        title=&quot;Void and Particles&quot;
-        src=&quot;/static/00b91ca78f7fedd27174dc55cc2f885e/f058b/interactive-web-app-1.png&quot;
-        srcset=&quot;/static/00b91ca78f7fedd27174dc55cc2f885e/c26ae/interactive-web-app-1.png 158w,
-/static/00b91ca78f7fedd27174dc55cc2f885e/6bdcf/interactive-web-app-1.png 315w,
-/static/00b91ca78f7fedd27174dc55cc2f885e/f058b/interactive-web-app-1.png 630w,
-/static/00b91ca78f7fedd27174dc55cc2f885e/40601/interactive-web-app-1.png 945w,
-/static/00b91ca78f7fedd27174dc55cc2f885e/78612/interactive-web-app-1.png 1260w,
-/static/00b91ca78f7fedd27174dc55cc2f885e/d9ed5/interactive-web-app-1.png 2880w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://voidandparticles.herokuapp.com/&quot;&gt;https://voidandparticles.herokuapp.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;가장 처음 만들었던 자바스크립트 프로젝트. 키보드의 A-L 라인을 누르거나 마우스로 클릭하면 랜덤한 색과 크기의 원과 랜덤한 음을 재생하는 사이트다. 스페이스바를 누르면 색이 반전되며 속도가 느려진다.&lt;/p&gt;
-&lt;p&gt;애니메이션 : paper.js&lt;/p&gt;
-&lt;p&gt;오디오 : howler.js&lt;/p&gt;
-&lt;h3 id=&quot;orbit-strum&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#orbit-strum&quot; aria-label=&quot;orbit strum permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Orbit Strum&lt;/h3&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ce685348669fafcd42111412fc4ee725/d9ed5/interactive-web-app-2.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62.65822784810127%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABLklEQVQ4y42R3UrDQBCFV5OmEVuxPkIkaKEiGDUQ8GG0Rb1qktJHtZXiq2iOO7ub/WtCe/Exs5OZs2eyrChekGXPyPMC0+kMaXqLJEmRXCsSD6+WpjeY3d3jIXtC9piDbedjbOcjfC8uBBuef72d9/NKkXrGIt/wfPd+iZ/PK+w+JmCoTyComKRm0LVO+PdVAKwj1a9mSznPfpcBXMIjsHvdedaUAYi/5amITRWhqYecyKLjXA0kZWhmOcw+iJwEV7GhjqWAXSNIjOq2mVI4NDdIwVA5Ghqh9chyrqA+qu0JcgeOYBkqV7azM0ssNivz9W0xZ2WK7n9UVJF7FrWBRs+oyGzL+mOtXLXuNJ7bPsG9lz4E9fkmzKMEzg3t6p20Ap4775W9mw+40w/Xs9E/AhVjeunXrGYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Orbit Strum&quot;
-        title=&quot;Orbit Strum&quot;
-        src=&quot;/static/ce685348669fafcd42111412fc4ee725/f058b/interactive-web-app-2.png&quot;
-        srcset=&quot;/static/ce685348669fafcd42111412fc4ee725/c26ae/interactive-web-app-2.png 158w,
-/static/ce685348669fafcd42111412fc4ee725/6bdcf/interactive-web-app-2.png 315w,
-/static/ce685348669fafcd42111412fc4ee725/f058b/interactive-web-app-2.png 630w,
-/static/ce685348669fafcd42111412fc4ee725/40601/interactive-web-app-2.png 945w,
-/static/ce685348669fafcd42111412fc4ee725/78612/interactive-web-app-2.png 1260w,
-/static/ce685348669fafcd42111412fc4ee725/d9ed5/interactive-web-app-2.png 2880w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://woojeongmin.com/OrbitStrum/&quot;&gt;https://woojeongmin.com/OrbitStrum/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;processing의 자바스크립트 버전인 p5.js로 만든 프로젝트이다. 4개의 원이 돌아가며 줄을 건드리면 줄의 길이에 따라 달라지는 음을 재생시키는 사이트다. 원과 직선이 만났는지 확인하기 위해 &lt;a href=&quot;https://www.jeffreythompson.org/collision-detection/line-circle.phpp&quot;&gt;충돌 감지&lt;/a&gt; 알고리즘을 사용했다.&lt;/p&gt;
-&lt;p&gt;애니메이션 : p5.js&lt;/p&gt;
-&lt;p&gt;오디오 : p5.js&lt;/p&gt;</content:encoded></item><item><title><![CDATA[클론 코딩: 유튜브 클론사이트]]></title><description><![CDATA[MERN 스택 유튜브 클론사이트 데모 영상 깃허브 John Ahn님의 유튜브 클론시리즈를 참고했다. 편의상 tailwind css를 사용하는 것으로 수정했고 nested comment…]]></description><link>https://woojeongmin.com/2021/youtube-clone/</link><guid isPermaLink="false">https://woojeongmin.com/2021/youtube-clone/</guid><pubDate>Wed, 10 Nov 2021 13:34:11 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f4734ee2db9dd97c41dea6a8e5ad611e/07a9c/youtube-clone.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62.65822784810127%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC+klEQVQ4y02S224bVRSG/QAkIDUuBW4QASGR0iJKG5rUNTG1ncRV2sSxPfb4XDdNx5kZz9kzttO6gCKlQlZS0cS+45aLvgfwUB/b4wT14tc67fVrrX/tyCeffsZC9CrRqx8zN/8RH8x9eIH5mZ2/9Of/z81d5Kb2yoLoXYiycCXKteg1ItlsFlmWKZVkJKkobIlqpULlArJcplyuUK5cYOqXZ7lKpUqj0aReq1GZxgIRXdeZoiMQ+D69fp/u4YvQBgI9P2AgbL/fE+gzGAxCO/NFvRcQBIGwPdHTI7L1IMHmTzHiyz/w1dc3eLD5iOTDFNfXN/heqnMju0NqN4tU2CX/OMF+o4DruDzcSnP75iLZxArp5e/YzvyM69pENmN32Umt0cjvktuVaLc1hnUJRc5RLG/zSM1TbtdxPZNiq8jgRcBvR8e4tsZOJoHWqrJ2/QtWv13EcUwi6dg9ijuPqUl56qUizw/aHCgqml7H9PYoNZ+ypxt0zDbNZ08pPKmRLUrUinmWby6RWbvLVvwOKTGYYwtCVVMZDoeMx2NOT04YjUaMTke8PR/z9uycs/MzJpMJJ6envBq+otvthrq5jhPq3ukYYjIn1HFai5iugWmaGIaBZdsYwj/Q2+iqii1i17JEk8q+ui9qBrZjC7i4poUh3jiuGxJ5XndGmMsXSKdS5LdzQiudtmWTTqfYSN4hn4nR1E1yrefcTyT5cSVOTBzw1u1bPGm1ODw8xBck09/hC4SEcrXC8fFrlCPx4M1r/vn7X+zAYjW5worQdml4xurvf3J/vcBSY53PpTiLX36D3GiINXsYlkO7Y2G7XkgaUdoKnt9lb7DH4M1LzidjURQXFaKXhD73Ju+I//EXG9kySVViTa2S2ZJpKhrPNAPVsNjXTEzbCSeNqFYHRVGwTQe7b6MbHfHgANMw8T2Pzi9H6C9/Rdc0bLF+4HjiKL6YbrbmlOTSD1d2uq4Q1AsDvzsrOF1PfNJZPnAdfIFp7IrYe+8AlySXmMb/AVBGLmK+nwfbAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;youtube-clone&quot;
-        title=&quot;youtube-clone&quot;
-        src=&quot;/static/f4734ee2db9dd97c41dea6a8e5ad611e/f058b/youtube-clone.png&quot;
-        srcset=&quot;/static/f4734ee2db9dd97c41dea6a8e5ad611e/c26ae/youtube-clone.png 158w,
-/static/f4734ee2db9dd97c41dea6a8e5ad611e/6bdcf/youtube-clone.png 315w,
-/static/f4734ee2db9dd97c41dea6a8e5ad611e/f058b/youtube-clone.png 630w,
-/static/f4734ee2db9dd97c41dea6a8e5ad611e/40601/youtube-clone.png 945w,
-/static/f4734ee2db9dd97c41dea6a8e5ad611e/78612/youtube-clone.png 1260w,
-/static/f4734ee2db9dd97c41dea6a8e5ad611e/07a9c/youtube-clone.png 1440w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;mern-스택-유튜브-클론사이트&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mern-%EC%8A%A4%ED%83%9D-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%ED%81%B4%EB%A1%A0%EC%82%AC%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;mern 스택 유튜브 클론사이트 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MERN 스택 유튜브 클론사이트&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/7Mkv-EjVKsA&quot;&gt;데모 영상&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/greenblues1190/Youtube-Clone&quot;&gt;깃허브&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;John Ahn님의 &lt;a href=&quot;https://youtube.com/playlist?list=PL9a7QRYt5fqnlSRu--re7N_1Ean5jFsh3&quot;&gt;유튜브 클론시리즈&lt;/a&gt;를 참고했다. 편의상 tailwind css를 사용하는 것으로 수정했고 nested comment와 영상 검색을 추가로 구현했다. 그 밖에 구독, 댓글, 영상 및 댓글의 좋아요/싫어요, 영상 업로드/수정/삭제, 썸네일 생성, 구독 및 좋아요한 영상 등을 주요 기능으로 구현했다.&lt;/p&gt;
-&lt;h2 id=&quot;상태관리에-대해&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC%EC%97%90-%EB%8C%80%ED%95%B4&quot; aria-label=&quot;상태관리에 대해 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;상태관리에 대해&lt;/h2&gt;
-&lt;p&gt;그동안 만들었던 블로그나 Movie API 사이트에 비해 훨씬 복잡한 프로젝트였다. 컴포넌트가 깊어지면서 props로 유저 정보를 넘겨주는 일이 상당히 많았는데 왜 상태관리가 프론트엔드에서 중요한지 느꼈던 부분이었다. 참고한 강의에서는 react redux를 사용햇다. 아직 구조와 데이터 흐름을 완벽히 파악하지 못했다는 생각이 들어 바닐라JS로 구현하며 공부할 예정이다.&lt;/p&gt;
-&lt;h2 id=&quot;개선할-점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B0%9C%EC%84%A0%ED%95%A0-%EC%A0%90&quot; aria-label=&quot;개선할 점 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;개선할 점&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;AWS와 같은 웹 서버 상에서 리액트가 동적으로 이미지, 영상을 로드할 수 있도록 서버에서 파일 API 추가&lt;/li&gt;
-&lt;li&gt;영상, 댓글 정렬&lt;/li&gt;
-&lt;li&gt;사이드바 개선&lt;/li&gt;
-&lt;li&gt;채널 검색&lt;/li&gt;
-&lt;li&gt;시청 기록, 재생 목록&lt;/li&gt;
-&lt;li&gt;알림 메세지&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[코드스피츠 85 - 거침없는 자바스크립트 정리]]></title><description><![CDATA[코드스피츠 85 거침없는 자바스크립트 1강 자바스크립트 개괄 ES6에서 일어난 일 Class, Object Literal이 새롭게 정의됨 Arrow 함수: 기존 함수가 클래스로 대체하는 기능까지 갖고 있어서 무거웠던 것에 비해 Arrow…]]></description><link>https://woojeongmin.com/2021/code-spitz-85/</link><guid isPermaLink="false">https://woojeongmin.com/2021/code-spitz-85/</guid><pubDate>Thu, 08 Jul 2021 05:25:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLBNdLLaRx_rImvbuZnfO-Ecv9OpuCNoCl&quot;&gt;코드스피츠 85 거침없는 자바스크립트&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;1강&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1%EA%B0%95&quot; aria-label=&quot;1강 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1강&lt;/h2&gt;
@@ -590,7 +673,6 @@ b&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;target &lt;span c
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Sync의 장점 + Async의 장점&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;인간이 Sync 로직으로 사고하는 것이 일반적이기 때문에 Sync 로직으로 Async를 사용할 수 있게 함. 하지만 Sync Flow가 어긋나므로 이전 Sync Flow의 상태를 기억하여 이어줄 장치가 필요하다. 상태를 기억하고 이어주는 장치를 Continuation이라 하고 이를 활용하는 프로그래밍 스타일이 &lt;strong&gt;C&lt;/strong&gt;ontinuation &lt;strong&gt;P&lt;/strong&gt;assing &lt;strong&gt;S&lt;/strong&gt;tyle이다.&lt;/p&gt;
-&lt;p&gt;어렵다… 어려워…&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -1546,52 +1628,7 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
 &lt;p&gt;서버로부터 오랜시간 동안 응답을 받지 못해 발생하는 에러.
 즉 서버에 문제가 있을 가능성이 크다.&lt;/p&gt;
 &lt;h3 id=&quot;해결&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%B4%EA%B2%B0&quot; aria-label=&quot;해결 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;해결&lt;/h3&gt;
-&lt;p&gt;서버 측 코드의 변수명의 오타를 발견하여 수정했다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[유의적 버전 (Semantic Versioning)]]></title><description><![CDATA[유의적 버전 2.0.0 정리. (semver.org/lang/ko/) 유의적 버전이란 버전 번호를 어떻게 정하고 올려야 하는지를 명시하는 규칙과 요구사항. API에 영향이 없는 버그 수정은 수(修)버전을 올리고, API…]]></description><link>https://woojeongmin.com/2021/semantic-versioning/</link><guid isPermaLink="false">https://woojeongmin.com/2021/semantic-versioning/</guid><pubDate>Tue, 02 Mar 2021 04:32:00 GMT</pubDate><content:encoded>&lt;p&gt;유의적 버전 2.0.0 정리. (&lt;a href=&quot;https://semver.org/lang/ko/&quot;&gt;semver.org/lang/ko/&lt;/a&gt;)&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;유의적-버전이란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9C%A0%EC%9D%98%EC%A0%81-%EB%B2%84%EC%A0%84%EC%9D%B4%EB%9E%80&quot; aria-label=&quot;유의적 버전이란 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;유의적 버전이란&lt;/h2&gt;
-&lt;p&gt;버전 번호를 어떻게 정하고 올려야 하는지를 명시하는 규칙과 요구사항.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;API에 영향이 없는 버그 수정은 수(修)버전을 올리고, API가 호환되면서 바꾸거나 추가하는 경우에는 부(部)버전을 올리고, API가 호환되지 않는 변경이라면 주(主)버전을 올린다.&lt;/li&gt;
-&lt;li&gt;유의적 버전을 쓰는 소프트웨어는 반드시 공개 API를 선언한다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;버전-관리-형식&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC-%ED%98%95%EC%8B%9D&quot; aria-label=&quot;버전 관리 형식 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;버전 관리 형식&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;X.Y.Z의 형태로 하고, X, Y, Z는 각각 자연수(음이 아닌 정수)이고, 절대로 0이 앞에 붙어서는 안 된다. X, Y, Z는 각각 주(主), 부(部), 수(修)버전 번호이다. 각각은 반드시 증가하는 수여야 한다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;예: 1.9.0 → 1.10.0 → 1.11.0&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;기존 버전과 호환되지 않게 API가 바뀌면 “주버전 X”를 올리고, 주버전 번호를 올릴 때는 반드시 부버전과 수버전을 0으로 초기화 한다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;예: 1.8.15 → 2.0.0&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;기존 버전과 호환되면서 새로운 기능을 추가할 때는 “부버전 Y”를 올리고, 공개 API의 일부를 앞으로 제거할 것(deprecate)으로 표시한 경우에도 반드시 올리도록 한다. 부버전이 올라가면 반드시 수버전을 0으로 초기화 한다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;예: 1.9.10 → 1.10.0&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol start=&quot;4&quot;&gt;
-&lt;li&gt;기존 버전과 호환되면서 버그를 수정한 것이라면 “수버전 Z”를 올린다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;예: 1.8.9 → 1.9.0&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol start=&quot;5&quot;&gt;
-&lt;li&gt;주버전 0(0.y.z)은 초기 개발을 위해서 쓴다. 1.0.0 버전은 공개 API를 정의한다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;pre-release-식별자&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#pre-release-%EC%8B%9D%EB%B3%84%EC%9E%90&quot; aria-label=&quot;pre release 식별자 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;pre-release 식별자&lt;/h2&gt;
-&lt;p&gt;수버전 바로 뒤에 붙임표(-)를 붙이고 마침표(.)로 구분된 식별자를 더해서 정식 배포를 앞둔 (pre-release) 버전을 표기할 수 있다. 식별자는 반드시 아스키(ASCII) 문자, 숫자, 붙임표로만 구성한다[0-9A-Za-z-]. 식별자는 반드시 한 글자 이상으로 한다. 숫자 식별자의 경우 절대 앞에 0을 붙인 숫자로 표기하지 않는다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;예: 1.0.0-alpha, 1.0.0-alpha.1, 1.0.0-0.3.7, 1.0.0-x.7.z.92&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;빌드-메타데이터-식별자&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B9%8C%EB%93%9C-%EB%A9%94%ED%83%80%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8B%9D%EB%B3%84%EC%9E%90&quot; aria-label=&quot;빌드 메타데이터 식별자 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;빌드 메타데이터 식별자&lt;/h2&gt;
-&lt;p&gt;빌드 메타데이터는 수버전이나 정식배포 전 식별자 뒤에 더하기(+) 기호를 붙인 뒤에 마침표로 구분된 식별자를 덧붙여서 표현할 수 있다. 식별자는 반드시 아스키 문자와 숫자와 붙임표로만 구성한다 [0-9A-Za-z-]. 식별자는 반드시 한 글자 이상으로 한다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;예: 1.0.0-alpha+001, 1.0.0+20130313144700, 1.0.0-beta+exp.sha.5114f85&lt;/p&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Gatsby.js 블로그 태그 추가하기]]></title><description><![CDATA[같은 주제에 대한 글을 모아 볼 수 있도록 태그를 추가해봅시다. 포스트에 태그 추가하기 마크다운 문서에서는 메타데이터를 YAML 헤더에 작성할 수 있습니다. title과 date 다음에 tags…]]></description><link>https://woojeongmin.com/2021/gatsby-blog/1-tags/</link><guid isPermaLink="false">https://woojeongmin.com/2021/gatsby-blog/1-tags/</guid><pubDate>Sat, 30 Jan 2021 18:16:00 GMT</pubDate><content:encoded>&lt;p&gt;같은 주제에 대한 글을 모아 볼 수 있도록 태그를 추가해봅시다.&lt;/p&gt;
+&lt;p&gt;서버 측 코드의 변수명의 오타를 발견하여 수정했다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby.js 블로그 태그 추가하기]]></title><description><![CDATA[같은 주제에 대한 글을 모아 볼 수 있도록 태그를 추가해봅시다. 포스트에 태그 추가하기 마크다운 문서에서는 메타데이터를 YAML 헤더에 작성할 수 있습니다. title과 date 다음에 tags…]]></description><link>https://woojeongmin.com/2021/gatsby-blog/1-tags/</link><guid isPermaLink="false">https://woojeongmin.com/2021/gatsby-blog/1-tags/</guid><pubDate>Sat, 30 Jan 2021 18:16:00 GMT</pubDate><content:encoded>&lt;p&gt;같은 주제에 대한 글을 모아 볼 수 있도록 태그를 추가해봅시다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;포스트에-태그-추가하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8F%AC%EC%8A%A4%ED%8A%B8%EC%97%90-%ED%83%9C%EA%B7%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0&quot; aria-label=&quot;포스트에 태그 추가하기 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;포스트에 태그 추가하기&lt;/h2&gt;
 &lt;p&gt;마크다운 문서에서는 메타데이터를 YAML 헤더에 작성할 수 있습니다.&lt;/p&gt;
