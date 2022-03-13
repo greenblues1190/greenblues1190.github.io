@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[woo jeongmin]]></title><description><![CDATA[웹 개발, 미디어 아트를 하고 있는 우정민입니다.]]></description><link>https://woojeongmin.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Mar 2022 17:12:01 GMT</lastBuildDate><item><title><![CDATA[주간회고 #1 - 화가는 무인도에서도 그림을 그릴까]]></title><description><![CDATA[…]]></description><link>https://woojeongmin.com/2022/retrospective/weekly-1/</link><guid isPermaLink="false">https://woojeongmin.com/2022/retrospective/weekly-1/</guid><pubDate>Sun, 27 Feb 2022 07:41:59 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[woo jeongmin]]></title><description><![CDATA[웹 개발, 미디어 아트를 하고 있는 우정민입니다.]]></description><link>https://woojeongmin.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 13 Mar 2022 13:00:45 GMT</lastBuildDate><item><title><![CDATA[주간회고 #3 - 이사]]></title><description><![CDATA[…]]></description><link>https://woojeongmin.com/2022/retrospective/weekly-3/</link><guid isPermaLink="false">https://woojeongmin.com/2022/retrospective/weekly-3/</guid><pubDate>Sun, 13 Mar 2022 12:11:34 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 577px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/553ffad79a3bbeb413153e5dcf9d8dc5/065e2/weekly-3-hikkoshi_man.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 108.22784810126582%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE7ElEQVQ4y4WTC0ybVRTHD20HlFJeZV3mdJkM48Zc3Aa0tBNRC2sLRRaXucy4ZxjsBeqYLnMuDtnkTaHQIrZ0lILs4cichqx7yOyDx2am02Qxy6JLNDFuiTLCcEC5x3M/hhqd+CUn99Fzf/d/zv8W4CFfjFIJoJgL0pjYkFnyKJDHxKij4uL2RshkBnls7OwIuRzCKC9cKoWw8HCIjo+HGT+5QgHSyEhRGB2Ijop8nEA/RysUKJVFYOzs+LtxSuVbsrmPgizhSVAqYv8fqJgzBxKWJMHilBWhYfIoH4GRLhmThIZNSmSRGEohFkvyIUQEIsks8YzAoY5qkERFi6ZWs9ZtfEmHLaWFEx+WFjL7oQJWtClvXLUiCeMVsZ74mEhYME8pWvREwgxAdxXsffVF8eqMNL5Mvna8Ek82v8NunbeyOz47s7z/WvDGJ3X49JLEXkQEHjN+Q53VcLv1CPziKpcNd9W2j/XYgs6KN7DveAX79owZLe8VBYd7bGgv2XLrursi6oeuGhiwHgz5T+AdVzl8d6wUvu4+JB11VJeNuGuH7wda8feBNnafYqK/DUc6zaN4yuYbOm9bcNdjg3ufWh8ODDRkQ5djHdjta8TgTAZYC5Kbp6uu4cBHeO+MNfibu3YS/e1448Thn6A0Im6tZwM0VOaG/khn23Zo4Oj2tL9gV+tzIGDJhldaM8QlDh3Aac3C+S2pt1e6dLirZ8NknacYGz2v457PNk9mtGXiY/aU64DrpaX7NYCQ8m+gv8HAgaKRmjz4vs6UbmvO+srUnoHP2FSTi/clovfUHvR7DrB0RyrTtKhZZrMWD+5T7z+xWf1c9ZtaqWvnP4EWI/jrjRJvvQF89UZ7v9mIVxpNY+fKdNixS828VavY1aY8drnGyFxFGnRuUwed+anYWqhGUpf4QKHoT2BfYw4HigP1Ruql8QTN0VdvmKB9NmgzsYAlBwONObRnZJ3FK5k9X8UcBSrmLFSP2vNTF1CAY5sqhCAGwQxvnT6kz5ItGWgSwN20hxQTBBJg/U0m7GukoHU7KSQAhyHFXddO7TwKOLpDEwL9Tbkw2JwHl2qywF6sgp4jOiDwSb/ZwA9PEIiRSgLmIgcPWk14vCQdHdvUrLVAjVTmSNtOzXwKILgI+q0E/GB1GAGjv7SZYhCroPvAs92eI5l4tixzwnM4k50T5i+g57AOz7z7PLp2a6hvaYxgXOF4y9bkR6iXYNu0HMBnJhPq9G/7zMZfL1tNN0nljdqty4b9ZMqlGj07W6ZjHPRFrR69FBUbl6K9WC2U3lttYO4iLZLSb5zb064QfKnQQ4I2+xuMvGforTOgl2BUMgs0GPBCeSZerNTjoI1KphzKR8rHfmpDn8WI7iIN9VJQyvu6RjCEetMmmGDJGSOXg9RDxtd8vFi5in1epRdM4c7zfT5SMD52kOPk7jgvnyJf+HcQqJNGnjTOE+mQENyQixWrGKlkpIj5H+wLMKqAqmIcSCUHnVPArRzG393HwjuzZAcFBVQSHwesudhbrUeukM+nnw0HCZfSvKNIy4GTAnBH2vqpkhuyj3EA9WbcZ9ZPlUbJ08DevwGnS+ZPia+5KQSbfpMvCy5TgpJUJZDbC2m+iJQuov1EKnPppRrDsgvlWUlkylPUguWUl0a/awmWQZdq3bs1KQRMai1QLW7Zkiz7A6ZU9zvnIWnVAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;hikkoshi_man&quot;
+        title=&quot;hikkoshi_man&quot;
+        src=&quot;/static/553ffad79a3bbeb413153e5dcf9d8dc5/065e2/weekly-3-hikkoshi_man.png&quot;
+        srcset=&quot;/static/553ffad79a3bbeb413153e5dcf9d8dc5/c26ae/weekly-3-hikkoshi_man.png 158w,
+/static/553ffad79a3bbeb413153e5dcf9d8dc5/6bdcf/weekly-3-hikkoshi_man.png 315w,
+/static/553ffad79a3bbeb413153e5dcf9d8dc5/065e2/weekly-3-hikkoshi_man.png 577w&quot;
+        sizes=&quot;(max-width: 577px) 100vw, 577px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;이사&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%B4%EC%82%AC&quot; aria-label=&quot;이사 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이사&lt;/h2&gt;
+&lt;p&gt;주말간 이사를 했다. 가구, 인터넷 가입 등을 알아보며 정신없이 이틀이 지나갔다. 가까이 도서관이 있어 당분간 출석할 예정이다.&lt;/p&gt;
+&lt;p&gt;자취를 처음하는 것도 아닌데 그동안 본가에 있다보니 혼자 산다는게 다시 어색하다. 집을 빨리 뭔가로 채워야겠다.&lt;/p&gt;
+&lt;p&gt;택배 파업으로 배송이 어렵다고 한다. 차를 빌려 갖다와야 하나..?&lt;/p&gt;
+&lt;h3 id=&quot;필요한-것&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%84%EC%9A%94%ED%95%9C-%EA%B2%83&quot; aria-label=&quot;필요한 것 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;필요한 것&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;인터넷&lt;/li&gt;
+&lt;li&gt;책상 (좌식을 고민하고 있음)&lt;/li&gt;
+&lt;li&gt;의자&lt;/li&gt;
+&lt;li&gt;침대 프레임&lt;/li&gt;
+&lt;li&gt;테이블&lt;/li&gt;
+&lt;li&gt;다용도 랙&lt;/li&gt;
+&lt;li&gt;러그&lt;/li&gt;
+&lt;li&gt;데스크 매트&lt;/li&gt;
+&lt;li&gt;전기밥솥&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;옵저버-패턴&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%A0%80%EB%B2%84-%ED%8C%A8%ED%84%B4&quot; aria-label=&quot;옵저버 패턴 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵저버 패턴&lt;/h2&gt;
+&lt;p&gt;이번 미션을 하며 옵저버 패턴으로 상태 관리를 구현했다. props drilling을 그만 보고 싶었던게 첫번째 이유, 두번째는 한번 구현해보고 싶어서.&lt;/p&gt;
+&lt;p&gt;Flux 패턴에 대해 공부하기로 해 글들을 찾아보며 느낀 건 reducer, dispatch가 과연 필요할까였다. 옵저버 패턴으로 전역 상태 관리 객체를 만들어보고 굳이 Flux가 아니더라도 충분히 사용할만한 구조라고 생각했다. 인터넷의 코드를 참고하지 않고 구조만 보고 직접 구현하는게 재밌는 것 같다.&lt;/p&gt;
+&lt;p&gt;우테코 최종 테스트를 대비하려고 빨리감기를 하며 봤던 코드스피츠 강의의 MVVM 내용이 많은 도움이 되었다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLBNdLLaRx_rIRXCp9tKsg7qDQmAX19ocw&quot;&gt;코드스피츠 86 객체지향 자바스크립트&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[주간회고 #1 - 화가는 무인도에서도 그림을 그릴까]]></title><description><![CDATA[…]]></description><link>https://woojeongmin.com/2022/retrospective/weekly-1/</link><guid isPermaLink="false">https://woojeongmin.com/2022/retrospective/weekly-1/</guid><pubDate>Sun, 27 Feb 2022 07:41:59 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
