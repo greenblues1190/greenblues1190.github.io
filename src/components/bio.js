@@ -36,7 +36,10 @@ const Bio = () => {
     <div className="bio">
       {author?.name && (
         <div>
-          {author?.summary || null} <strong>{author.name}</strong>입니다.
+          <p>
+            <strong>{author.name}</strong>
+          </p>
+          <p>{author?.summary || null}</p>
           <div className="bio-social-link">
             <a
               className="link-highlighter"
@@ -44,21 +47,27 @@ const Bio = () => {
             >
               <img src="/social_logo/GitHub-Mark-32px.png" alt="github" />
             </a>
-            ·
-            {/* <a href={`https://instagram.com/${social?.instagram || ``}`}>
-              <img src="/social_logo/Instagram_Glyph_Gradient_RGB.png" alt="instagram" />
+            {/* ·
+            <a href={`https://instagram.com/${social?.instagram || ``}`}>
+              <img
+                src="/social_logo/Instagram_Glyph_Gradient_RGB.png"
+                alt="instagram"
+              />
             </a>
             ·
             <a href={`https://soundcloud.com/${social?.soundcloud || ``}`}>
-              <img src="/social_logo/soundcloud_orange_transparent_32.png" alt="soundcloud" />
+              <img
+                src="/social_logo/soundcloud_orange_transparent_32.png"
+                alt="soundcloud"
+              />
             </a>
-            · */}
+            ·
             <a
               className="link-highlighter"
               href={`https://subsequent-motorcycle-de8.notion.site/78f84d8375a547e69b5a7e7c2ed3bc93`}
             >
               portfolio
-            </a>
+            </a> */}
           </div>
         </div>
       )}

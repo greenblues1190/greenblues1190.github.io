@@ -6,21 +6,15 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Toc from "../components/toc"
-import { Disqus } from "gatsby-plugin-disqus"
+import CommentBox from "../components/comment-box.js"
 
 // const HEADER_OFFSET_Y = 116;
-// const HEADER_OFFSET_Y = 0
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
   // const [CurrentHeaderUrl, setCurrentHeaderUrl] = useState(undefined)
-  const disqusConfig = {
-    url: data.site.siteMetadata.siteUrl + location.pathname,
-    identifier: post.id,
-    title: post.frontmatter.title,
-  }
 
   // TODO: toc anchor link highlighting following scroll
   // useEffect(() => {
@@ -119,7 +113,7 @@ const BlogPostTemplate = ({ data, location }) => {
             </li>
           </ul>
         </nav>
-        <Disqus config={disqusConfig} />
+        <CommentBox repo="greenblues1190/greenblues1190.github.io" />
       </div>
     </Layout>
   )

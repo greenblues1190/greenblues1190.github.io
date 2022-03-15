@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { CommentCount } from "gatsby-plugin-disqus"
+import CommentCount from "../components/comment-count"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -30,12 +30,7 @@ const BlogIndex = ({ data, location }) => {
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug 
-          const disqusConfig = {
-            url: data.site.siteMetadata.siteUrl + post.fields.slug,
-            identifier: post.id,
-            title: title,
-          }
+          const title = post.frontmatter.title || post.fields.slug
 
           return (
             <li key={post.fields.slug}>
@@ -62,7 +57,7 @@ const BlogIndex = ({ data, location }) => {
                       <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" />
                     </svg>
                     <small>
-                    <CommentCount config={disqusConfig} placeholder={'...'} />
+                      <CommentCount placeholder={"..."} />
                     </small>
                   </div>
                 </header>

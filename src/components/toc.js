@@ -1,16 +1,14 @@
 import React from "react"
 
 const ToC = ({ tableOfContents, currentHeaderUrl }) => {
-  if (tableOfContents && tableOfContents.length > 0) {
-    return (
+  return (
+    tableOfContents?.length > 0 && (
       <div className="toc">
         <title>Table of contents</title>
         <div dangerouslySetInnerHTML={{ __html: tableOfContents }} />
       </div>
     )
-  } else {
-    return null
-  }
+  )
 }
 
 export default ToC

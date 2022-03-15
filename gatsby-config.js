@@ -3,7 +3,7 @@ module.exports = {
     title: `woo jeongmin`,
     author: {
       name: `우정민`,
-      summary: `웹 개발, 미디어 아트를 하고 있는`,
+      summary: `웹 개발, 프론트엔드`,
     },
     keywords: `frontend, react, gatsby, web, dev, javascript, 프론트엔드, 리액트, 개츠비, 웹개발, 자바스크립트`,
     description: `웹 개발, 미디어 아트를 하고 있는 우정민입니다.`,
@@ -155,12 +155,6 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-cname`,
-    {
-      resolve: `gatsby-plugin-disqus`,
-      options: {
-        shortname: `jeongminwoo`,
-      },
-    },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-google-fonts`,

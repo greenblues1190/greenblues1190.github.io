@@ -241,6 +241,16 @@ a:focus {
   text-decoration: none;
 }
 
+/* figure {
+  padding: 10rem;
+} */
+
+figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
 /* Custom classes */
 
 .global-wrapper {
@@ -312,7 +322,7 @@ a:focus {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--spacing-2);
-  margin: 0;
+  margin-top: 8px;
   font-size: 1rem;
 }
 
