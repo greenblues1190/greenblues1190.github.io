@@ -148,16 +148,7 @@
   <figcaption>아...</figcaption>
 </figure>
 <p>문제는 useLayoutEffect가 동기적이라는 것이다. useLayoutEffect가 실행되는 동안 브라우저 페인팅을 블로킹하면서 웹앱이 일시중지된다. 이펙트 내부에 느린 작업이 있는 경우 버벅임과 같은 성능 이슈를 발생시킬 수 있다.</p>
-<p><strong>즉, 더 빠른 데이터 fetching에서 얻는 이점 &#x3C; 브라우저 페인팅이 블로킹되면서 생기는 성능 이슈</strong></p>
-<figure>
-  <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 512px; ">
-      <span class="gatsby-resp-image-background-image" style="padding-bottom: 60.75949367088608%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAACjUlEQVQozw3N21KiYAAAYN5wn6Cd2Z3aaZpqalZS5Fh5LLXQEJAfEBBEEQTkIGCCbm3tTbMXPdDu9wIfZMOpX8kDNJexZwbNuWquVrchsouQfVQtEjJPqSKu7nx8OxuHuu/prq/HwZSOXTKD1Ku1gT37RGHjG4vIfWoXEbsU20foPr0p3qXXd/F3Sv0KrwtLDI1kpW8iwwvmZjqrZtAIiRgi0m82AbVJ63nWKOLG1gWJ10pCJH9+2CX3WwcJrfJqzkdze20Z6eIxseqxWU6hCWwPMNBDRKbCS5im4mYfYQdPI+lOmyDWoMQNr8CwLHRKjzyuyOSUq0pa2QalqVGOIL3i0VVWoFQRVWaYO6dcGZmIiCrAqoRobFkUShpAJwKqAFQXSJ0nRInwu6WZXIkg/34zJyMLjY2KOyU89lIbHqshViyRxMbWSyrzyY13vU4HuV1LrOvYoVIVTUZXK+X/nMpblbYF3sJrXWZqzDZJs8aD0mxeCXTY08urVT/eay/PoNiK+6CT23i+vH6xsFwthVAoJSyrK2kwiQOsPxg6C8FzOM16qPdo8ohrHEtE0+fDCMR2x9PKcw02H3880ofi5CqGnGbePZPbQ1k3aHGAqY459lysdvuEni6f8FRtj+Bj5MsBuLy1xxPujKAPTxL29v77kUyOobtzZSAt+lOz0WuyNMnIgBuPxnU0o2t7ubVXWm+gy11cmEw/Wy9XtjFETjOhJcPHTz/rUFuasVkYff7tMnUYPQWrpRI4C4V5nXOZVI85PAO9xhkq9nraXUPttkeVbyb2dYqe82cj6MFfMVHkfPwxikjPw/jzw3l76QB2NupubJDaoit0TLrNU1hoiO4ELLnaK3Pu4gfiCfwP5LG3otMrtWsAAAAASUVORK5CYII='); background-size: cover; display: block;"></span>
-  <img class="gatsby-resp-image-image" alt="did you think" title="did you think" src="/static/a10ccc9138cc033fea39db8ffb8e1200/01e7c/useeffect-uselayouteffect-did-you-think.png" srcset="/static/a10ccc9138cc033fea39db8ffb8e1200/c26ae/useeffect-uselayouteffect-did-you-think.png 158w,
-/static/a10ccc9138cc033fea39db8ffb8e1200/6bdcf/useeffect-uselayouteffect-did-you-think.png 315w,
-/static/a10ccc9138cc033fea39db8ffb8e1200/01e7c/useeffect-uselayouteffect-did-you-think.png 512w" sizes="(max-width: 512px) 100vw, 512px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
-    </span>
-  <figcaption>아니요</figcaption>
-</figure>
+<p><strong>즉, 더 빠른 데이터 fetching에서 얻는 이점보다 브라우저 페인팅이 블로킹되면서 생기는 성능 이슈가 더 심각하다.</strong></p>
 </details>
 <h2 id="uselayouteffect와-ssr" style="position:relative;"><a href="#uselayouteffect%EC%99%80-ssr" aria-label="uselayouteffect와 ssr permalink" class="anchor-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>useLayoutEffect와 SSR</h2>
 <blockquote>
