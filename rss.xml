@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[woo jeongmin]]></title><description><![CDATA[웹 개발, 미디어 아트를 하고 있는 우정민입니다.]]></description><link>https://woojeongmin.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Sep 2022 13:16:58 GMT</lastBuildDate><item><title><![CDATA[브라우저 주소창에 www.naver.com을 치면 일어나는 일]]></title><description><![CDATA[What happens when…을 바탕으로 네트워크와 OS, 브라우저에서 일어나는 일을 정리했습니다. URL을 파싱합니다. protocol:  hostname:  resource…]]></description><link>https://woojeongmin.com/2022/study-log/what-happens-when-you-type-wwwnavercom/</link><guid isPermaLink="false">https://woojeongmin.com/2022/study-log/what-happens-when-you-type-wwwnavercom/</guid><pubDate>Mon, 05 Sep 2022 05:30:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[woo jeongmin]]></title><description><![CDATA[웹 개발, 미디어 아트를 하고 있는 우정민입니다.]]></description><link>https://woojeongmin.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Sep 2022 14:13:53 GMT</lastBuildDate><item><title><![CDATA[브라우저 주소창에 www.naver.com을 치면 일어나는 일]]></title><description><![CDATA[What happens when…을 바탕으로 네트워크와 OS, 브라우저에서 일어나는 일을 정리했습니다. URL을 파싱합니다. protocol:  hostname:  resource…]]></description><link>https://woojeongmin.com/2022/study-log/what-happens-when-you-type-wwwnavercom/</link><guid isPermaLink="false">https://woojeongmin.com/2022/study-log/what-happens-when-you-type-wwwnavercom/</guid><pubDate>Mon, 05 Sep 2022 05:30:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/alex/what-happens-when&quot;&gt;What happens when…&lt;/a&gt;을 바탕으로 네트워크와 OS, 브라우저에서 일어나는 일을 정리했습니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;url을-파싱합니다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#url%EC%9D%84-%ED%8C%8C%EC%8B%B1%ED%95%A9%EB%8B%88%EB%8B%A4&quot; aria-label=&quot;url을 파싱합니다 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;URL을 파싱합니다.&lt;/h2&gt;
@@ -132,7 +132,7 @@ x-xss-protection: 1; mode=block&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot
 /static/b2b7c07bd7f5af231cdeaa0c3804a686/6bdcf/what-happens-when-webkit-flow.png 315w,
 /static/b2b7c07bd7f5af231cdeaa0c3804a686/39c09/what-happens-when-webkit-flow.png 624w&quot; sizes=&quot;(max-width: 624px) 100vw, 624px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
     &lt;/span&gt;
-  &lt;figcaption&gt;Webkit 기본 흐름&lt;/figcaption&gt;
+  &lt;figcaption&gt;Webkit 렌더링 파이프라인&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 624px; &quot;&gt;
@@ -156,17 +156,13 @@ x-xss-protection: 1; mode=block&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot
 &lt;h3 id=&quot;페이지-렌더링&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A0%8C%EB%8D%94%EB%A7%81&quot; aria-label=&quot;페이지 렌더링 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;페이지 렌더링&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;DOM 노드를 순회하며 각 노드의 CSS 스타일 값을 계산하여 프레임 트리(혹은 렌더 트리)를 생성합니다.&lt;/li&gt;
-&lt;li&gt;자식 노드들의 너비를 더해 ‘프레임 트리’ 내 각 노드의 선별된 너비를 거꾸로 계산하고 그 노드의 수평 여백, 경계, 그리고 패딩도 계산합니다.
-각 노드가 사용 가능한 너비를 자식들에게 할당하면서 위에서 아래로 실제 너비를 계산합니다.
-문자 래핑을 적용하고 자식 노드의 높이, 그리고 노드의 여백, 경계, 패딩을 더해 각 노드의 높이를 거꾸로 계산합니다.
-각 노드의 좌표를 위에서 계산된 정보를 통해 뽑아냅니다.
-더 복잡한 과정은 요소들이 float 이거나, absolutely 혹은 relatively 으로 위치해있을 때처럼 다른 복잡한 특성이 쓰일 때 일어납니다. &lt;a href=&quot;http://dev.w3.org/csswg/css2/&quot;&gt;http://dev.w3.org/csswg/css2/&lt;/a&gt; 와 &lt;a href=&quot;http://www.w3.org/Style/CSS/current-work&quot;&gt;http://www.w3.org/Style/CSS/current-work&lt;/a&gt; 에서 더 자세한 정보를 확인하세요.
-레이어를 만들어 페이지 내 어떤 부분이 그룹으로 애니메이션화 될 수 있도록 다시-래스터화 되지 않는지 서술합니다. 각 프레임/렌더 객체는 레이어에 배정됩니다.
-페이지의 각 레이어를 위해 텍스쳐가 할당됩니다.
-각 레이어의 프레임/렌더 객체를 가로지르며 해당 레이어의 그리기 명령이 실행됩니다. 이 과정은 CPU에 의해 래스터화 하거나 D2D/SkiaGL을 활용해 GPU에 직접 그리기도 합니다.
-위의 모든 과정은 최근에 웹 페이지가 렌더링될 때 계산된 값을 재활용 할 수 있어서, 이후의 변화에 대해서는 적은 노력이 듭니다.
-페이지 레이어는 합성 과정으로 넘어가고 거기에서 크롬 브라우저나 iframe 그리고 애드온과 같은 다른 시각 요소들과 합쳐집니다.
-마지막 레이어 위치가 계산되고 합성 명령이 Direct3D/OpenGL 등을 통해 발행됩니다. GPU 명령 버퍼는 비동기적 렌더링을 위해 비워지고 프레임은 윈도우 서버로 전송됩니다.&lt;/li&gt;
+&lt;li&gt;각 노드의 width, height, margin, padding, border, 좌표를 계산합니다.&lt;/li&gt;
+&lt;li&gt;레이어를 만들고 각 프레임/렌더 객체를 레이어에 할당합니다.&lt;/li&gt;
+&lt;li&gt;페이지의 각 레이어에 텍스쳐가 할당됩니다.&lt;/li&gt;
+&lt;li&gt;각 레이어의 프레임/렌더 객체를 순회하며 해당 레이어의 drawing 명령을 실행합니다.&lt;/li&gt;
+&lt;li&gt;가장 최근에 웹 페이지가 렌더링될 때 계산된 값은 기억되어 이후의 변화를 계산할 때 재사용됩니다.&lt;/li&gt;
+&lt;li&gt;페이지 레이어는 합성 과정으로 넘어가 크롬 브라우저나 iframe 그리고 애드온과 같은 다른 시각 요소들과 합쳐집니다.&lt;/li&gt;
+&lt;li&gt;마지막 레이어 위치가 계산되면 합성 명령이 Direct3D/OpenGL 등을 통해 실행됩니다. GPU 명령 버퍼는 비동기적 렌더링을 위해 비워지고 프레임은 윈도우 서버로 전송됩니다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;gpu-렌더링&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gpu-%EB%A0%8C%EB%8D%94%EB%A7%81&quot; aria-label=&quot;gpu 렌더링 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GPU 렌더링&lt;/h3&gt;
 &lt;p&gt;렌더링 과정에서 그래픽 처리 연산 레이어는 GPU가 담당하기도 합니다. 그래픽 렌더링 연산을 위해 GPU를 사용할 때는 그래픽 담당 소프트웨어 레이어가 작업을 여러 조각으로 쪼개어 GPU의 부동 소수점 연산 병렬처리를 통해 렌더링을 돕습니다.&lt;/p&gt;
